@@ -1,0 +1,389 @@
+/**
+ * CSS code for all top store Extensions admin screens
+ *
+ * @package top store
+ * @since 1.0.0
+ */
+
+.m-shop-clear:before, .m-shop-clear:after {
+	content: " ";
+	display: table;
+}
+.m-shop-clear:after {
+	clear: both;
+}
+
+/**
+ * Error Message
+ */
+#message {
+    display: block;
+    margin-left: 0;
+}
+/*Home Page Settings */
+
+li#accordion-section-section_default_home h3 {
+    background: #a5a7ad !important;
+    color: #fff !important;
+}
+.button-large.flactvate{ display:none; }
+
+.flactvate-activating{
+  color:#f7a205;
+  margin-top: 15px;
+  display:none;
+  float: right;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #1b619d;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+    float: right;
+    margin-top: 10px;
+    display: none;
+      margin-left:5px;
+
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/**
+ * CSS code for all top store Extensions admin screens
+ *
+ * @package top store
+ * @since 1.2.4
+ */
+/**
+ * top store Welcome Page
+ */
+.appearance_page_m-shop #wpcontent{
+ 	padding: 0;
+ }
+.m-shop-menu-page-wrapper.wrap{
+	margin: 0;
+}
+.m-shop-menu-page-wrapper .m-shop-normal-cusror a{
+	text-decoration: none;
+    font-weight:500;
+    color: #fff;
+    font-size: 14px
+}
+.m-shop-theme-page-header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.m-shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.m-shop-container .m-shop-normal-cusror.hndle{
+    cursor: initial;
+}
+.m-shop-container .postbox .hndle {
+    background: #f9f9f9;
+    border-bottom: 1px solid #f1f1f1;
+
+}
+/* Top Right Links. */
+.m-shop-top-links {
+    flex: auto;
+    text-align: right;
+}
+
+.m-shop-top-links ul{
+    margin: 0;
+}
+.m-shop-top-links ul li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.m-shop-quick-setting-section span.dashicons {
+    margin: 1px 3px 0 10px;
+}
+.m-shop-container div.notice,
+.m-shop-container div.updated,
+.m-shop-container div.error{
+	margin-top: 0;
+}
+.m-shop-container #poststuff h2{
+	padding: 10px 12px;
+}
+.m-shop-container img.m-shop-starter-sites-img {
+    width: 100%;
+}
+.m-shop-flex{
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.m-shop-theme-title {
+    align-content: flex-start;
+    text-align: left;
+}
+.m-shop-theme-title .m-shop-theme-version {
+    border-radius: 3px;
+    font-size:  0.5em;
+    font-weight:  400;
+    padding: 2px 7px;
+}
+.m-shop-theme-title a {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:100%;
+    margin: 0 auto;
+}
+.m-shop-theme-title a,
+.m-shop-theme-title span{
+	font-size: 1.5rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.m-shop-theme-icon{
+	width: 60px;
+    vertical-align: bottom;
+}
+.m-shop-theme-title,.ast-top-links{
+width:100%;
+margin-bottom:10px;
+}
+.m-shop-top-links {
+    flex: auto;
+    text-align: center;
+}
+.m-shop-theme-page-header {
+    background-color: #FFDD4D;
+}
+.m-shop-theme-title a:focus,.m-shop-theme-title a:focus-within{
+outline:0;
+box-shadow:none;
+}
+.m-shop-menu-page-wrapper .m-shop-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        align-items: flex-start;
+}
+.m-shop-menu-page-wrapper .m-shop-content .postbox{
+  width:48%;
+} 
+.m-shop-container .rcp{
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+.m-shop-container .rcp img{
+    float: left;
+    display: block;
+    margin-right:10px;
+    width:17%;
+}
+.m-shop-container .rcp p{
+margin: 10px 0px;
+}
+.m-shop-container .rcp:last-child{
+border-bottom:0px;
+}
+/**
+ * top store Quick Settings
+ */
+ .m-shop-quick-setting-section ul,
+ .m-shop-addon-list-section ul{
+ 	margin: 0;
+ }
+.m-shop-quick-setting-section li{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 0;
+}
+.m-shop-addon-list-section li{
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 0;
+}
+.m-shop-quick-setting-section li{
+    padding: 10px 0;
+}
+.m-shop-quick-setting-section li:nth-child(odd){
+    width: 50%;
+}
+.m-shop-quick-setting-section li:nth-child(even){
+    width: 50%;
+}
+.m-shop-quick-setting-section li a{
+	margin: 5px;
+	display: inline-block;
+}
+.m-shop-addon-list-section li{
+	padding: 10px 15px;
+}
+.m-shop-quick-setting-section a.ast-quick-setting-title{
+	flex: auto;
+}
+
+.m-shop-addon-list-section .m-shop-addon-list li {
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 10px 15px; 
+}
+
+.m-shop-addon-list-section .m-shop-addon-list li:nth-child(even){
+    background-color: #fbfbfb;
+}
+
+.m-shop-addon-link-wrapper{
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    flex: auto;
+}
+.m-shop-addon-link-wrapper a{
+    line-height: 1.6;
+}
+.m-shop-addon-link-wrapper a:nth-child(even){
+    margin: 0 10px;
+}
+
+/**
+ * m-shop Welcome screen sidebar
+ */
+.ast-sidebar .hndle .dashicons{
+	margin: 0 5px 0 0;
+}
+
+@media (max-width: 544px){
+	.m-shop-quick-setting-section li{
+		width: 100%;
+	}
+}
+
+/**
+ * m-shop Custom Notice for static position
+ */
+.brv-notice{
+    margin-bottom: 20px;
+}
+.ast-notice.ast-notice-error{
+    border-left-color: #dc3232;
+}
+
+.ast-notice{
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+    padding: 1px 12px;
+}
+.ast-notice p{
+    margin: 0.5em 0;
+    padding: 2px;
+}
+
+.m-shop-menu-page-wrapper .m-shop-content .postbox.m-shop-recommend-plugins,
+.m-shop-menu-page-wrapper .m-shop-content .postbox.m-shop-useful-plugins{
+width:100%;
+}
+.m-shop-container .postbox.m-shop-recommend-plugins .rcp,
+.m-shop-container .postbox.m-shop-useful-plugins .rcp {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.m-shop-container .postbox.m-shop-recommend-plugins .rcp:nth-child(3n+3),
+.m-shop-container .postbox.m-shop-useful-plugins .rcp:nth-child(3n+3){
+margin-right:0;
+}
+
+.m-shop-container .postbox.m-shop-recommend-plugins .rcp:nth-child(4),
+.m-shop-container .postbox.m-shop-useful-plugins .rcp:nth-child(4){
+clear:both;
+}
+.m-shop-container .postbox .inside {
+    margin: 15px 0!important;
+    position: relative;
+}
+.m-shop-container .postbox.m-shop-recommend-plugins .rcp:nth-child(7),
+.m-shop-container .postbox.m-shop-useful-plugins .rcp:nth-child(7){
+clear:both;
+}
+.m-shop-useful-plugins .inside{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabs-list a{
+    display: inline-block;
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+    font-size: 15px;
+}
+.tabs-list a{
+    background: #eaeaea;
+}
+.tabs-list a.active{
+    background: #FFF;
+}

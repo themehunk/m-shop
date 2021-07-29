@@ -1,0 +1,44 @@
+/*
+Theme Name: M Shop
+Theme URI: https://themehunk.com/product/m-shop/
+Author: ThemeHunk
+Author URI: https://www.themehunk.com
+Description: M Shop is an eCommerce WordPress theme specially made for shopping websites. Theme is best suited for Fashion & Clothing store, furniture, grocery, clothing, electronic, gadget store and decorative gifts stores. Some theme features are Tabbed product carousel, Woo Category layouts, Footer layouts, quick view, translation ready, Ajax search, shop with category, Top slider layouts, Product Filter, Product styles, Color & Background options etc. Theme is deeply integrated with WooCommerce plugin to sell your products online. Theme option panel is so easy to use and theme is also fully responsive to each & every device like Mobile, ipads etc.
+Version: 1.0.5
+Requires at least: 4.7
+Tested up to: 5.7.2
+Requires PHP: 5.3
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: m-shop
+Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/        
+@font-face{
+  font-family: 'JosefinSans-Bold';
+  src: url('third-party/fonts/site-font/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'JosefinSans-SemiBold';
+  src: url('third-party/fonts/site-font/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Roboto-Regular';
+  src: url('third-party/fonts/site-font/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Roboto-Bold';
+  src: url('third-party/fonts/site-font/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
