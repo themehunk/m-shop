@@ -3636,8 +3636,8 @@ color:#9c9c9c;
   border: 0;
 }
 .widget-footer .widget-footer-wrap {
-    padding: 1.5rem 0 0 0;
-    margin: 0 -0.5rem;
+       padding: 1.5rem 0;
+    margin:0;
 }
 .woocommerce.widget_shopping_cart .buttons a {
     margin-right:0.5rem;
