@@ -146,7 +146,9 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
-
+.entry-content a,.thunk-post-excerpt a{
+text-decoration:underline;
+}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -936,7 +938,7 @@ padding-top: 5rem;
 }
 aside.m-shop-sidebar {
     position: fixed;
-    top:0;
+    top: 120px;
     left: 0;
     height: 100%;
     border-right: 1px solid #e3e9ef;
@@ -1102,7 +1104,7 @@ header .mobile-nav-bar.sider.right {
     flex-grow: 1;
     text-align: center;
 }
-.sidebar-nav-tabs li a.active {
+.sidebar-nav-tabs li.current a{
     color: #000;
     background-color: transparent;
     border-bottom:2px solid #000;
@@ -1138,8 +1140,6 @@ header .mobile-nav-bar.sider.right {
     direction: inherit;
     box-sizing: border-box!important;
     position: relative;
-    display: block;
-    
     width: auto;
    overflow-y: auto;
     visibility: visible;
@@ -1147,6 +1147,22 @@ header .mobile-nav-bar.sider.right {
     max-height: 100%;
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.sidebar-tab-wrap .panel{
+display: none;
+}
+.sidebar-tab-wrap .panel.current {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
 
 .sidebar-nav-widget {
     text-align: left;

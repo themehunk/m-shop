@@ -112,15 +112,13 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                 'active_filename' => 'woocommerce/woocommerce.php',
                 'slug'			=>	'woocommerce',
             ),
-            'woo-smart-wishlist' => array(
-                 'name' => esc_html__( 'WPC Smart Wishlist for WooCommerce', 'm-shop' ),
-                 'active_filename' => 'woo-smart-wishlist/wpc-smart-wishlist.php',
-                 'slug'				=>	'woo-smart-wishlist',
+            'yith-woocommerce-wishlist' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'm-shop' ),
+                 'active_filename' => 'yith-woocommerce-wishlist/yith-woocommerce-wishlist.php',
              ),
-            'woo-smart-compare' => array(
-                 'name' => esc_html__( 'WPC Smart Compare for WooCommerce', 'm-shop' ),
-                 'active_filename' => 'woo-smart-compare/wpc-smart-compare.php',
-                 'slug'			=>	'woo-smart-compare',
+            'yith-woocommerce-compare' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Compare', 'm-shop' ),
+                 'active_filename' => 'yith-woocommerce-compare/yith-woocommerce-compare.php',
              ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'm-shop' ),
@@ -164,8 +162,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in your primary sidebar.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="m-shop-widget-content">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Above Header First Widget', 'm-shop' ),
@@ -173,8 +171,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top header.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Above Header Second Widget', 'm-shop' ),
@@ -182,8 +180,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top header.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Above Header Third Widget', 'm-shop' ),
@@ -191,8 +189,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top header.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -201,8 +199,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in side pan.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Side Pan Widget Two', 'm-shop' ),
@@ -210,8 +208,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in side pan.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
     register_sidebar(array(
 		'name'          => esc_html__( 'Footer Top First Widget', 'm-shop' ),
@@ -219,8 +217,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top footer.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Footer Top Second Widget', 'm-shop' ),
@@ -228,8 +226,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top footer.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Footer Top Third Widget', 'm-shop' ),
@@ -237,8 +235,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top footer.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Footer Below First Widget', 'm-shop' ),
@@ -246,8 +244,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top footer.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Footer Below Second Widget', 'm-shop' ),
@@ -255,8 +253,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top footer.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar(array(
 		'name'          => esc_html__( 'Footer Below Third Widget', 'm-shop' ),
@@ -264,8 +262,8 @@ function m_shop_widgets_init(){
 		'description'   => esc_html__( 'Add widgets here to appear in top footer.', 'm-shop' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	for ( $i = 1; $i <= 4; $i++ ){
 		register_sidebar( array(
@@ -273,8 +271,8 @@ function m_shop_widgets_init(){
 			'id'            => 'footer-' . $i,
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		) );
 	}
 	
