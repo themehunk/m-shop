@@ -480,14 +480,7 @@ if ( ! class_exists( 'M_Shop_Admin_Settings' ) ){
             $status = is_dir( WP_PLUGIN_DIR . '/' . $plugin_slug );
             if($plugin_slug=='yith-woocommerce-wishlist' || $plugin_slug=='yith-woocommerce-compare'){
                 $active_file_name = $plugin_slug . '/init.php';
-                }
-            elseif($plugin_slug=='woo-smart-wishlist'){
-                $active_file_name = $plugin_slug . '/wpc-smart-wishlist.php';
-                }
-            elseif($plugin_slug=='woo-smart-compare'){
-                $active_file_name = $plugin_slug . '/wpc-smart-compare.php';
-                }
-            else{
+                }else{
                 	$active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
                 }
             
@@ -557,17 +550,11 @@ if ( ! class_exists( 'M_Shop_Admin_Settings' ) ){
                 }elseif($plugin_slug=='woocommerce'){
                 	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/woocommerce.png' ).'" />'; 
                 $detail='';
-                }elseif($plugin_slug=='woo-smart-wishlist'){
-                	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.png' ).'" />'; 
-                $detail='';
-                }elseif($plugin_slug=='woo-smart-compare'){
-                	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.png' ).'" />'; 
-                $detail='';
                 }elseif($plugin_slug=='yith-woocommerce-wishlist'){
-                	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/whislist.png' ).'" />'; 
+                	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/yith-woocommerce-wishlist.png' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='yith-woocommerce-compare'){
-                	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.png' ).'" />'; 
+                	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/yith-woocommerce-compare.png' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='one-click-demo-import'){
                 	echo'<img src="'.esc_url(  M_SHOP_THEME_URI . 'lib/theme-option/assets/images/one-click-demo-import.png' ).'" />'; 
@@ -766,7 +753,8 @@ if ( ! class_exists( 'M_Shop_Admin_Settings' ) ){
 		  * Setup Homepage
 		  */
 		public function m_shop_activeplugin(){
-				$init = isset($_POST['init'])?$_POST['init']:'';
+			
+				$init = isset($_POST['init']) ? $_POST['init']:'';
 				$slug = isset($_POST['slug']) && $_POST['slug']=='one-click-demo-import';
 		        activate_plugin( $init, '', false, true );
 			       			wp_die(); 

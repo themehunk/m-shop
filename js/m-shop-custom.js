@@ -214,15 +214,15 @@
         }, 
         sidebar_menu_with_woocat: function () {
                     $(document).ready(function() {
-                         $('.sidebar-nav-tabs li a').click(function(){
-                         $('.panel').hide();
-                         $('.sidebar-nav-tabs li a.active').removeClass('active');
-                         $(this).addClass('active'); 
-                         var panel = $(this).attr('href');
-                         $(panel).fadeIn(1000); 
-                         return false;// prevents link action
-                          });// end click 
-                         $('.sidebar-nav-tabs li:first a').click();              
+                          $('.sidebar-nav-tabs ul li').click(function(){
+                            var tab_id = $(this).attr('data-menu');
+
+                            $('.sidebar-nav-tabs ul li').removeClass('current');
+                            $('.panel').removeClass('current');
+
+                            $(this).addClass('current');
+                            $("#"+tab_id).addClass('current');
+                        })           
                 });                   
         }, 
        
