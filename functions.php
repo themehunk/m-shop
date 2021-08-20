@@ -288,7 +288,7 @@ function m_shop_scripts(){
 	wp_enqueue_style( 'font-awesome', M_SHOP_THEME_URI . '/third-party/fonts/font-awesome/css/font-awesome.css', '', M_SHOP_THEME_VERSION );
 	wp_enqueue_style( 'animate', M_SHOP_THEME_URI . '/css/animate.css','',M_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'owl.carousel-css', M_SHOP_THEME_URI . '/css/owl.carousel.css','',M_SHOP_THEME_VERSION);
-	wp_enqueue_style( 'm-shop-pro-menu', M_SHOP_THEME_URI . '/css/m-shop-menu.css','',M_SHOP_THEME_VERSION);
+	
     if((bool)get_theme_mod('m_shop_rtl')==true){
 	wp_enqueue_style( 'm-shop-rtl-style', M_SHOP_THEME_URI . 'css/rtl.css','',M_SHOP_THEME_VERSION);	
 	}else{
