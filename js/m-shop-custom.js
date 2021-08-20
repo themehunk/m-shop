@@ -214,6 +214,7 @@
         }, 
         sidebar_menu_with_woocat: function () {
                     $(document).ready(function() {
+                      
                           $('.sidebar-nav-tabs ul li').click(function(){
                             var tab_id = $(this).attr('data-menu');
 

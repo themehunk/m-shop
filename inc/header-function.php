@@ -267,22 +267,23 @@ function m_shop_sidebar_panel(){
               <?php if(class_exists( 'WooCommerce' )){?>
                <div class="sidebar-nav-tabs">
                 <ul>
-                  <li class="categories current" data-menu="sidebar-nav-tab-category">
-                    <a href="#sidebar-nav-tab-category"><?php _e('Categories','m-shop');?></a>
-                  </li>
-                  <li class="primary" data-menu="sidebar-nav-tab-menu">
+                   <li class="primary  current" data-menu="sidebar-nav-tab-menu">
                      <a href="#sidebar-nav-tab-menu"><?php _e('Menu','m-shop');?></a>
                   </li>
+                  <li class="categories" data-menu="sidebar-nav-tab-category">
+                    <a href="#sidebar-nav-tab-category"><?php _e('Categories','m-shop');?></a>
+                  </li>
+                 
                 
                 </ul>
             </div>
             <?php }?>
              <?php if(class_exists( 'WooCommerce' )){?>
-           <div id="sidebar-nav-tab-category" class="sidebar-nav-tab-category panel current">
+           <div id="sidebar-nav-tab-category" class="sidebar-nav-tab-category panel ">
              <?php m_shop_product_list_categories_pan(); ?>
            </div>
            <?php }?>
-            <div id="sidebar-nav-tab-menu" class="sidebar-nav-tab-menu panel">
+            <div id="sidebar-nav-tab-menu" class="sidebar-nav-tab-menu panel current">
           <?php if(has_nav_menu('m-shop-main-menu' )){ 
                    
                         m_shop_main_nav_menu();

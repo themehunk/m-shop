@@ -938,7 +938,6 @@ padding-top: 5rem;
 }
 aside.m-shop-sidebar {
     position: fixed;
-    top: 120px;
     left: 0;
     height: 100%;
     border-right: 1px solid #e3e9ef;
@@ -3723,6 +3722,7 @@ color: #fff;
     font-weight: normal;
         border-radius:4px;
         font-family: 'Roboto-Bold';
+        text-decoration: none;
 }
 article{
 border-radius:3px;
