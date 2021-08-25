@@ -51,7 +51,7 @@ M ShopResponsive Menu script
                 $aceMenu.find('ul.slide').removeClass('slide').removeAttr('style');
                 $aceMenu.addClass('collapse hide-menu');
                 $('.main-header .menu-toggle,.below-header .menu-toggle').show();
-                $('.menu-close-btn,.arrow').attr('tabindex',-1);
+                $('.menu-close-btn,.arrow,.pan-icon').attr('tabindex',0);
                 }else{
                 $aceMenu.attr('data-menu-style', $menuStyle);
                 $aceMenu.removeClass('collapse hide-menu').removeAttr('style');

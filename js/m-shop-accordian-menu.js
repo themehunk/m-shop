@@ -48,7 +48,6 @@
         }
         // Main function 
         return this.each(function (){
-
             // Function for Horizontal menu on mouseenter
             $aceMenu.on('mouseover', '> li a', function (){
                 if ($aceMenu.hasClass('collapse') === true){
@@ -79,10 +78,8 @@
                 }
             });
              //Function for Vertical/Responsive Menu on mouse click
-            $aceMenu.on('keypress', 'li span.arrow', function (e){
-            var w = $(window).innerWidth();
-            if (w <= $resizeWidth){
-                 e.preventDefault();
+            $aceMenu.on('keypress', 'li span.arrow', function (e){ 
+                e.preventDefault();
                 if ($aceMenu.hasClass('collapse')==false){
                    // return true;
                 }
@@ -96,8 +93,7 @@
                         return;
                     }
                 }
-            }
-            });
+           });
            
         });
         //End of Main function
