@@ -5691,7 +5691,7 @@ opacity:1;
 .header-pan-icon{
     display:none;
 }
-.header-pan-icon span{
+.header-pan-icon a{
     position: fixed;
     top: 50%;
     left: 0;
@@ -5713,7 +5713,7 @@ opacity:1;
     content: "\f101";
     font-family: FontAwesome;
 }
-.side-pan-active .header-pan-icon span{
+.side-pan-active .header-pan-icon a{
     left: 22rem;
 }
 .side-pan-active .pan-icon:before{

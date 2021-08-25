@@ -332,20 +332,20 @@ mshopmenu.modalMenu = {
     var _doc = document;
     _doc.addEventListener( 'keydown', function( event ){
       var toggleTarget, modal, selectors, elements, menuType, bottomMenu, activeEl, lastEl, firstEl, tabKey, shiftKey,
-        toggleTarget = '.mobile-nav-bar.sider';
+        toggleTarget = '.m-shop-sidebar';
         if(jQuery('.mobile-menu-active').length!=''){   
         selectors = 'a,.arrow';
         modal = _doc.querySelector( toggleTarget );
         elements = modal.querySelectorAll( selectors );
         elements = Array.prototype.slice.call( elements );
-        if ( '.mobile-nav-bar.sider' === toggleTarget ){
+        if ( '.m-shop-sidebar' === toggleTarget ){
           menuType = window.matchMedia( '(min-width: 1024px)' ).matches;
-          menuType = menuType ? '.expanded-menu' : '.mobile-nav-tab-menu .m-shop-menu';
+          menuType = menuType ? '.expanded-menu' : '.m-shop-sidebar';
           elements = elements.filter( function( element ) {
             return null !== element.closest( menuType ) && null !== element.offsetParent;
           } );
-          elements.unshift( _doc.querySelector( '.mobile-nav-bar .menu-close-btn' ) );
-           $('.mobile-nav-tab-menu .m-shop-menu a,.mobile-nav-bar .menu-close-btn,.mobile-nav-bar .arrow').attr('tabindex',0); 
+          elements.unshift( _doc.querySelector( ' .menu-close-btn' ) );
+           $('.m-shop-menu a,.menu-close-btn, .arrow').attr('tabindex',0); 
         }
         lastEl = elements[ elements.length - 1 ];
         firstEl = elements[0];
