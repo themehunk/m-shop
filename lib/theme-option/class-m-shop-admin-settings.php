@@ -544,6 +544,9 @@ if ( ! class_exists( 'M_Shop_Admin_Settings' ) ){
                 }elseif($plugin_slug=='wp-popup-builder'){
 				echo'<img src="'.esc_url( M_SHOP_THEME_URI. 'lib/theme-option/assets/images/wp-popup-builder.png' ).'" />'; 
 		        $detail='';
+                }elseif($plugin_slug=='th-variation-swatches'){
+				echo'<img src="'.esc_url( M_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-variation-swatches.png' ).'" />'; 
+		        $detail='';
                 }elseif($plugin_slug=='themehunk-customizer'){
                 	echo'<img src="'.esc_url(M_SHOP_THEME_URI. 'lib/theme-option/assets/images/themehunk-customizer.png' ).'" />'; 
 		        $detail= '';

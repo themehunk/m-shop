@@ -223,28 +223,6 @@ function bigStoreSetCss( settings, to ){
         jQuery( settings.selectors ).css( settings.cssProperty, to + 'px' );
     }
 }
-//*****************************/
-// Logo
-//*****************************/
-wp.customize(
-    'm_shop_logo_width', function (value){
-        'use strict';
-        value.bind(
-            function( to ) {
-                var settings = {
-                    cssProperty: 'max-width',
-                    propertyUnit: 'px',
-                    styleClass: 'open-logo-width'
-                };
-
-                var arraySizes = {
-                    size3: { selectors:'.thunk-logo img,.sticky-header .logo-content img', values: ['','',''] }
-                };
-                bigStoreGetCss( arraySizes, settings, to );
-            }
-        );
-    }
-);
 
 /****************/
 // footer

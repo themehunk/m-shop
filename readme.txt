@@ -4,7 +4,7 @@ Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, fou
 Requires at least: WordPress 4.7
 Requires PHP: 5.3
 Tested up to: 5.8
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -23,6 +23,10 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
+= 1.0.9 =
+* Header Height issue resolved.
+* TH Variation Swatches added in theme option recommend plugins.
 
 = 1.0.8 =
 * KeyBoard Navigation issue fixed.
@@ -55,9 +59,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Initial release
 
 == Upgrade Notice ==
-= 1.0.1 =
-* WPC Icons Added.
-* Theme Option Panel Added.
+= 1.0.9 =
+* Header Height issue resolved.
+* TH Variation Swatches added in theme option recommend plugins.
 
 == Resources ==
  

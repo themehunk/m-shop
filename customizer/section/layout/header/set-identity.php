@@ -60,33 +60,6 @@ $wp_customize->add_control('tagline_disable', array(
             'enable' => 'Display Tagline',
         ),
     )); 
-// logo width
-if ( class_exists( 'M_Shop_WP_Customizer_Range_Value_Control' ) ){
-$wp_customize->add_setting(
-            'm_shop_logo_width', array(
-                'sanitize_callback' => 'm_shop_sanitize_range_value',
-                'default' => '225',
-                'transport'         => 'postMessage',
-                
-            ));
-$wp_customize->add_control(
-            new M_Shop_WP_Customizer_Range_Value_Control(
-                $wp_customize, 'm_shop_logo_width', array(
-                    'label'       => esc_html__( 'Logo Width', 'm-shop' ),
-                    'section'     => 'title_tagline',
-                    'priority'       => 9,
-                    'type'        => 'range-value',
-                    'input_attr'  => array(
-                        'min'  => 50,
-                        'max'  => 600,
-                        'step' => 1,
-                    ),
-                    'media_query' => true,
-                    'sum_type'    => true,
-                )
-        )
-);
-}
 
 $wp_customize->add_setting('m_shop_site_identity', array(
     'sanitize_callback' => 'm_shop_sanitize_text',
