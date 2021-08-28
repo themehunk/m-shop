@@ -8,7 +8,6 @@
  */
 function m_shop_custom_style(){
 $m_shop_style=""; 
-$m_shop_style.= m_shop_responsive_slider_funct( 'm_shop_logo_width', 'm_shop_logo_width_responsive');
 /**************************/
 // Above Fooetr
 /**************************/
@@ -95,26 +94,6 @@ $m_shop_text_clr       = esc_html(get_theme_mod('m_shop_text_clr'));
 $m_shop_title_clr   = esc_html(get_theme_mod('m_shop_title_clr'));
 $m_shop_style.=".page-head h1{color{$m_shop_title_clr};} .primary-content-wrap article,.breadcrumb-m_shop_trail{color:{$m_shop_text_clr};} .primary-content-wrap a{color:{$m_shop_link_clr};}  .primary-content-wrap a:hover{color:{$m_shop_link_hvr_clr};}";
   return $m_shop_style;
-}
-//start logo width
-function m_shop_logo_width_responsive( $value, $dimension = 'desktop' ){
-    $custom_css = '';
-    switch ( $dimension ){
-    case 'desktop':
-      $v3 = $value;
-      break;
-    case 'tablet':
-      $v3 = $value;
-      break;
-    case 'mobile':
-      $v3 = $value;
-      break;
-  }
-  $custom_css .= '.thunk-logo img,.sticky-header .logo-content img{
-    max-width: ' . $v3 . 'px;
-  }';
-  $custom_css = m_shop_add_media_query( $dimension, $custom_css );
-  return $custom_css;
 }
 
 // top footer height

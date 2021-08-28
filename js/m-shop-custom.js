@@ -50,7 +50,7 @@
                 var caluheight1 = sidepanhgt  - sidepannavhgt;
                 var caluheight2 = caluheight1 - sidepanwgthgt;
                 var caluheight3 = caluheight2 - headerhgt;
-                $(".m-shop-sidebar").css('top',headerhgt + "px");
+                // $(".m-shop-sidebar").css('top',headerhgt + "px");
                 
                 $('#sidebar-nav-tab-category').css('height',caluheight3 + "px");
                 $('#sidebar-nav-tab-menu').css('height',caluheight3 + "px"); 

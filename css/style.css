@@ -105,7 +105,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+header, 
 main,
 menu,
 nav,
@@ -938,6 +938,7 @@ padding-top: 5rem;
 }
 aside.m-shop-sidebar {
     position: fixed;
+    top: 82px;
     left: 0;
     height: 100%;
     border-right: 1px solid #e3e9ef;
@@ -948,6 +949,9 @@ aside.m-shop-sidebar {
     -webkit-transition: left .2s ease-in-out;
     -moz-transition: left .2s ease-in-out;
     transition: left .2s ease-in-out;
+}
+.logged-in aside.m-shop-sidebar{
+  top: 112px;
 }
 
 footer {
@@ -964,14 +968,18 @@ footer {
 --------------------------------------------------------------*/
 header {
     position: fixed;
-    z-index:99;
     background: #fff;
+    height: 82px;
     width: 100%;
     box-shadow: 0 .125rem .3rem -.0625rem rgba(0,0,0,.03),0 .275rem .75rem -.0625rem rgba(0,0,0,.06)!important;
+    z-index:99;
+}
+img.custom-logo{
+    max-width: 182px;
 }
 .main-header{
     position: relative;
-        padding: .75rem 0rem;
+    padding: .75rem 0rem;
 }
 .main-header:before {
     content: "";

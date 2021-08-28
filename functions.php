@@ -112,6 +112,10 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                 'active_filename' => 'woocommerce/woocommerce.php',
                 'slug'			=>	'woocommerce',
             ),
+            'th-variation-swatches' => array(
+                'name' => esc_html__( 'TH Variation Swatches', 'm-shop' ),
+                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
+            ), 
             'yith-woocommerce-wishlist' => array(
                  'name' => esc_html__( 'YITH WooCommerce Wishlist', 'm-shop' ),
                  'active_filename' => 'yith-woocommerce-wishlist/yith-woocommerce-wishlist.php',
