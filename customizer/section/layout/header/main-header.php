@@ -1,15 +1,4 @@
 <?php
-$wp_customize->add_setting( 'm_shop_cat_search_disable', array(
-                'default'               => false,
-                'sanitize_callback'     => 'm_shop_sanitize_checkbox',
-            ) );
-$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'm_shop_cat_search_disable', array(
-                'label'                 => esc_html__('Check to disable Category in Search Box', 'm-shop'),
-                'type'                  => 'checkbox',
-                'section'               => 'm-shop-section-header-group',
-                'settings'              => 'm_shop_cat_search_disable',
-                'priority'   => 1,
-            ) ) );
 /******************/
 // Disable in Mobile
 /******************/

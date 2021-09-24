@@ -543,6 +543,9 @@ if ( ! class_exists( 'M_Shop_Admin_Settings' ) ){
 		        $detail='';
                 }elseif($plugin_slug=='wp-popup-builder'){
 				echo'<img src="'.esc_url( M_SHOP_THEME_URI. 'lib/theme-option/assets/images/wp-popup-builder.png' ).'" />'; 
+				$detail='';
+                }elseif($plugin_slug=='th-advance-product-search'){
+				echo'<img src="'.esc_url( M_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-advance-product-search.png' ).'" />'; 
 		        $detail='';
                 }elseif($plugin_slug=='th-variation-swatches'){
 				echo'<img src="'.esc_url( M_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-variation-swatches.png' ).'" />'; 

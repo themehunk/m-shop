@@ -27,9 +27,7 @@ function m_shop_main_header_markup(){
         </div>
 					<div class="main-header-col2">
           <?php 
-          if ( class_exists( 'WooCommerce' ) ){
-          m_shop_product_search_box();
-            }
+          echo m_shop_th_advance_product_search();
           ?>
           </div>
 					<div class="main-header-col3">
@@ -143,6 +141,7 @@ endif;
                        </form>
  </div>                    
 <?php }
+
 /**********************************/
 // header icon function
 /**********************************/
@@ -307,6 +306,18 @@ function m_shop_sidebar_panel(){
         </div>
       </div>
 <?php 
+}
+
+//********************************
+//th advance product search 
+//*******************************
+function m_shop_th_advance_product_search(){
+  if ( class_exists('TH_Advance_Product_Search') ){
+                echo do_shortcode('[th-aps]');
+              } elseif ( !class_exists('TH_Advance_Product_Search') && is_user_logged_in()) {
+                $url = admin_url('themes.php?page=m-shop');
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','m-shop').'</a>';
+                    }
 }
 
 //**************************//
