@@ -25,7 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 = 1.1.0 =
-* Th adavance product search plugin added.
+* Th advance product search plugin added.
 
 = 1.0.9 =
 * Header Height issue resolved.
