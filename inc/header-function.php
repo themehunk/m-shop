@@ -319,7 +319,7 @@ function m_shop_th_advance_product_search(){
                 $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
                 $url = (function_exists("m_shop_pro_load_plugin"))?$pro_url:$url;
 
-                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','m-shop').'</a>';
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please Install "th advance product search" Plugin','m-shop').'</a>';
                     }
 }
 
