@@ -27,7 +27,7 @@ function m_shop_main_header_markup(){
         </div>
 					<div class="main-header-col2">
           <?php 
-          echo m_shop_th_advance_product_search();
+                    m_shop_th_advance_product_search();
           ?>
           </div>
 					<div class="main-header-col3">
@@ -316,9 +316,13 @@ function m_shop_th_advance_product_search(){
                 echo do_shortcode('[th-aps]');
               } elseif ( !class_exists('TH_Advance_Product_Search') && is_user_logged_in()) {
                 $url = admin_url('themes.php?page=m-shop');
-                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please install th advance product search plugin','m-shop').'</a>';
+                $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
+                $url = (function_exists("m_shop_pro_load_plugin"))?$pro_url:$url;
+
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please Install "th advance product search" Plugin','m-shop').'</a>';
                     }
 }
+
 
 //**************************//
 //Side Bar Markup
