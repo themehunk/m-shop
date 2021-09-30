@@ -6946,6 +6946,22 @@ border: 1px solid #000;
 font-size:1.8rem;
 }
 
+/* th advance product search */
+.main-header-col2 a.plugin-active-msg{
+    background-color: #5662eb;
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+.main-header-col2 a.plugin-active-msg:hover{
+text-decoration: underline !important;
+}
+
 @media screen and (max-width: 1250px){
   #search-box #search-button {
   padding: 0 2rem;
