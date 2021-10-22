@@ -100,50 +100,86 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
         add_theme_support( 'woocommerce', array(
                                                  'thumbnail_image_width' => 320,
                                              ) );
+
+
         // Recommend plugins
         add_theme_support( 'recommend-plugins', array(
-             'themehunk-customizer' => array(
-                'name' => esc_html__( 'Themehunk Customizer', 'm-shop' ),
-                'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
-                'slug'		=> 'themehunk-customizer',
-            ),
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'm-shop' ),
-                'active_filename' => 'woocommerce/woocommerce.php',
-                'slug'			=>	'woocommerce',
-            ),
-            'th-advance-product-search' => array(
-                'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
-                'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
-            ), 
-            'th-variation-swatches' => array(
-                'name' => esc_html__( 'TH Variation Swatches', 'm-shop' ),
-                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
-            ), 
-            'yith-woocommerce-wishlist' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'm-shop' ),
-                 'active_filename' => 'yith-woocommerce-wishlist/yith-woocommerce-wishlist.php',
-             ),
-            'yith-woocommerce-compare' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Compare', 'm-shop' ),
-                 'active_filename' => 'yith-woocommerce-compare/yith-woocommerce-compare.php',
-             ),
-            'lead-form-builder' => array(
+
+        	'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'm-shop' ),
+                 'img' => 'icon-128x128.png',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
-                'slug'			 =>	'lead-form-builder',
             ),
             'wp-popup-builder' => array(
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'm-shop' ),
+                 'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
-                'slug'			=>	'wp-popup-builder',
             ), 
-            'one-click-demo-import' => array(
-                'name' => esc_html__( 'One Click Demo Import', 'm-shop' ),
-                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
+
+            'th-advance-product-search' => array(
+            'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
+            'img' => 'icon-128x128.gif',
+            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
             ),
+            'th-variation-swatches' => array(
+                'name' => esc_html__( 'TH Variation Swatches', 'm-shop' ),
+                 'img' => 'icon-128x128.gif',
+                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
+            ),
+
+             'themehunk-customizer' => array(
+                'name' => esc_html__( 'Themehunk Customizer', 'm-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
+            ),
+            'woocommerce' => array(
+                'name' => esc_html__( 'Woocommerce', 'm-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'woocommerce/woocommerce.php',
+            ),
+
+            'yith-woocommerce-wishlist' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'm-shop' ),
+                  'img' => 'icon-128x128.jpg',
+                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
+             ),
+            'yith-woocommerce-compare' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Compare', 'm-shop' ),
+                  'img' => 'icon-128x128.jpg',
+                 'active_filename' => 'yith-woocommerce-compare/init.php',
+             ),
+
+            'themehunk-megamenu-plus' => array(
+                'name' => esc_html__( 'ThemeHunk Megamenu – Menu builder', 'm-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'themehunk-megamenu-plus/themehunk-megamenu.php',
+            ), 
+            
+
         ) );
 
+        // Import Data Content plugins
+        add_theme_support( 'import-demo-content', array(
+             'themehunk-customizer' => array(
+                'name' => esc_html__( 'Themehunk Customizer', 'm-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
+            ),
+
+            'one-click-demo-import' => array(
+                'name' => esc_html__( 'One Click Demo Import', 'm-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
+            ), 
+            'woocommerce' => array(
+                'name' => esc_html__( 'Woocommerce', 'm-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'woocommerce/woocommerce.php',
+            ),
+
+        ));
+
+        
            // Useful plugins
         add_theme_support( 'useful-plugins', array(
              'themehunk-megamenu-plus' => array(
