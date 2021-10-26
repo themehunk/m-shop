@@ -30,7 +30,6 @@
 <div class="theme_link">
     <h3><?php _e('Join Group','m-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
     <p><?php _e("Join the community of friendly ThemeHunk users. Get connected, share opinion, ask questions and help each other !",'m-shop'); ?></p>
-    <p><?php _e("Please Join Our Facebook Group",'m-shop'); ?></p>
 
     <a href="https://www.facebook.com/groups/themehunk" target="_blank" rel="external noreferrer noopener" class="facebook-gropup is-link"><span class="dashicon dashicons dashicons-facebook-alt"></span><span>
         <?php _e(' Join our Facebook Group','m-shop'); ?></span></a>
