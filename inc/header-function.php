@@ -315,7 +315,7 @@ function m_shop_th_advance_product_search(){
   if ( class_exists('TH_Advance_Product_Search') ){
                 echo do_shortcode('[th-aps]');
               } elseif ( !class_exists('TH_Advance_Product_Search') && is_user_logged_in()) {
-                $url = admin_url('themes.php?page=thunk_started');
+                $url = admin_url('themes.php?page=thunk_started&searchp');
                 $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
                 $url = (function_exists("m_shop_pro_load_plugin"))?$pro_url:$url;
 
