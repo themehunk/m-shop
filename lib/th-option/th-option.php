@@ -1,6 +1,6 @@
 <?php
 include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-class m_shop_theme_option{
+class M_Shop_theme_option{
 function __construct(){
 add_action( 'admin_enqueue_scripts', array($this,'admin_scripts'));
 add_action('admin_menu', array($this,'menu_tab'));
@@ -8,6 +8,7 @@ add_action('admin_menu', array($this,'menu_tab'));
     // AJAX.
     add_action( 'wp_ajax_th_activeplugin',array($this,'th_activeplugin') );
     add_action( 'wp_ajax_default_home',array($this, 'default_home') );
+    add_action( 'admin_notices', array($this, 'child_theme_admin_notice') );
 }
 function menu_tab() {
     $menu_title = esc_html__('M Shop Options', 'm-shop');
@@ -41,7 +42,7 @@ function tab_constant(){
     $tab_array = array();
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','m-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
-    'welcome'=>sprintf(esc_html__('Welcome To %1s WordPress theme', 'm-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
+    'welcome'=>sprintf(esc_html__('Welcome To %1s Theme', 'm-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
     'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is an eCommerce WordPress theme specially made for shopping websites.', 'm-shop' ),
     'v'=> 'Version '.$theme_data->get( 'Version' )
     );
@@ -223,7 +224,14 @@ function plugin_install_button($plugin){
     } // plugin check
 }
 
-		
+	public function child_theme_admin_notice() {
+    ?>
+    <div class="notice notice-success is-dismissible child-theme-notice">
+        <p><?php _e( 'We highly recommended to use child theme. Child theme inherit the style and functionality of parent theme, you can easily update the parent theme without losing its Customization. Thats why we recommended to use child theme to make your site updateproof.', 'm-shop' ); ?></p>
+        <a href="<?php echo esc_url('https://themehunk.com/child-theme/#m-shop-child'); ?>" class="button" target="_blank"><?php _e('Get chld theme Now','m-shop') ?></a>
+    </div>
+    <?php
+}	
 	
 } // class end
-$boj = new m_shop_theme_option(); ?>
+$boj = new M_Shop_theme_option(); ?>

@@ -11,18 +11,6 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4 style="color: #FF6D00;"><?php _e('Pre Made Template','m-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status success"><span class="dashicon dashicons" size="30"></span>
-                     <span class="info"><?php _e('2','m-shop'); ?> </span></td>
-                     <td class="status success"><span class="dashicon dashicons" size="30"></span>
-                     <span class="info"><a href="https://themehunk.com/product/m-shop/#tabfix" target="_blank"><?php _e('7','m-shop'); ?> </a></span></td>
-                  </tr>
-
-                  <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
                            <h4><?php _e('Section Hide Option','m-shop'); ?> </h4>
                         </div>
                      </td>
@@ -30,6 +18,8 @@
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
 
+                  
+                  
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
@@ -37,8 +27,9 @@
                         </div>
                      </td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                  </tr>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30">
+                     </span></td>
+
 
 
                   <tr class="feature-row">
@@ -195,7 +186,6 @@
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
-
                   
                     <tr class="feature-row th-buy-pro">
                      <td class="title">
