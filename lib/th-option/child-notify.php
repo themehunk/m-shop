@@ -59,8 +59,8 @@ class ThemeHunk_Child_Notify{
 		?>
 
           <div class="notice notice-success is-dismissible child-theme-notice">
-        <p><?php _e( 'We highly recommended to use child theme. Child theme inherit the style and functionality of parent theme, you can easily update the parent theme without losing its Customization. Thats why we recommended to use child theme to make your site updateproof.', 'jot-shop' ); ?></p>
-        <a href="<?php echo esc_url('https://themehunk.com/child-theme/#jot-shop-child'); ?>" class="button" target="_blank"><?php _e('Get chld theme Now','jot-shop') ?></a>
+        <p><?php _e( 'We highly recommended to use child theme. Child theme inherit the style and functionality of parent theme, you can easily update the parent theme without losing its Customization. Thats why we recommended to use child theme to make your site updateproof.', 'm-shop' ); ?></p>
+        <a href="<?php echo esc_url('https://themehunk.com/child-theme/#m-shop-child'); ?>" class="button" target="_blank"><?php _e('Get chld theme Now','m-shop') ?></a>
 
         <a href="?notice-disable=1"  class="notice-dismiss dashicons dashicons-dismiss dashicons-dismiss-icon"></a>
     </div>
