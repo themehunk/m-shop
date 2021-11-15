@@ -26,6 +26,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.1.4 =
 * Th option panel updated.
+* Child theme notification modification work.
 
 = 1.1.3 =
 * Th advance product search url issue fixed.
@@ -77,6 +78,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Upgrade Notice ==
 = 1.1.4 =
 * Th option panel updated.
+* Child theme notification modification work.
 
 == Resources ==
  
