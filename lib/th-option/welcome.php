@@ -1,8 +1,14 @@
 
 <!--- tab first -->
 <div class="theme_link">
-    <h3><?php _e('Setup Home Page','m-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
-    <p><?php _e('Click button to set theme default home page','m-shop'); ?></p>
+    <h3><?php _e('1. Install Recommended Plugins','m-shop'); ?></h3>
+    <p><?php _e('We highly Recommend to install ThemeHunk Customizer plugin to get all customization options in M Shop theme. Also install recommended plugins available in recommended tab.','m-shop'); ?></p>
+</div>
+<div class="theme_link">
+    <h3><?php _e('2. Setup Home Page','m-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
+        <p><?php _e('To set up the HomePage in M Shop theme, Just follow the below given Instructions.','m-shop'); ?> </p>
+<p><?php _e('Go to Wp Dashboard > Pages > Add New > Create a Page using “Home Page Template” available in Page attribute.','m-shop'); ?> </p>
+<p><?php _e('Now go to Settings > Reading > Your homepage displays > A static page (select below) and set that page as your homepage.','m-shop'); ?> </p>
      <p>
         <?php
 		if($this->_check_homepage_setup()){
@@ -20,33 +26,24 @@
         }
         ?>
         <button style="<?php echo $Bstyle; ?>"; class="button activate-now <?PHP echo $class; ?>"><?php _e($btn_text,'m-shop'); ?></button>
-        <a style="<?php echo $style; ?>";  target="_blank" href="<?php echo get_home_url(); ?>" class="button alink button-primary"><?php _e('View Home Page','m-shop'); ?></a>
 		
          </p>
 		 	 
 		 
     <p>
-        <a target="_blank" href="https://themehunk.com/docs/m-shop/#homepage-setting"><?php _e('Manually Setup','m-shop'); ?></a>
+        <a target="_blank" href="https://themehunk.com/docs/m-shop/#homepage-setting" class="button"><?php _e('Go to Doc','m-shop'); ?></a>
     </p>
 </div>
 
-
-
-<!--- tab second -->
-<div class="theme_link">
-
-    <h3><?php _e('Documentation','m-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
-    <p><?php _e('Our WordPress Theme is well documented, you can go with our documentation and learn to customize M Shop Theme','m-shop'); ?></p>
-    <p><a target="_blank" href="https://themehunk.com/docs/m-shop/"><?php _e(' Go to docs','m-shop'); ?></a></p>
-
-    
-    
-</div>
 <!--- tab third -->
 
+
+
+
+
 <!--- tab second -->
 <div class="theme_link">
-    <h3><?php _e('Customize Your Website','m-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
+    <h3><?php _e('3. Customize Your Website','m-shop'); ?><!-- <php echo $theme_config['plugin_title']; ?> --></h3>
     <p><?php _e('M Shop theme support live customizer for home page set up. Everything visible at home page can be changed through customize panel','m-shop'); ?></p>
     <p>
     <a href="<?php echo admin_url('customize.php'); ?>" class="button button-primary"><?php _e("Start Customize","m-shop"); ?></a>
@@ -55,7 +52,7 @@
 <!--- tab third -->
 
   <div class="theme_link">
-    <h3><?php _e("Customizer Links","m-shop"); ?></h3>
+    <h3><?php _e("4. Customizer Links","m-shop"); ?></h3>
     <div class="card-content">
         <div class="columns">
                 <div class="col">
