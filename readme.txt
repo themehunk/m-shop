@@ -27,6 +27,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 = 1.1.4 =
 * Th option panel updated.
 * Child theme notification modification work.
+* Free Vs Pro features updated.
+* Th option panel sidebar text updated.
 
 = 1.1.3 =
 * Th advance product search url issue fixed.

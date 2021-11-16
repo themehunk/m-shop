@@ -4,8 +4,8 @@
                 <span><?php _e('M Shop Pro WordPress Theme','m-shop'); ?> </span>
             </h3>
             <p>
-            <b><?php _e('10+ pre-made premium templates','m-shop'); ?> </b><br>
-            <?php _e('M Shop Pro is one of the most popular single page theme on WordPress.','m-shop'); ?> </p>
+            <b><?php _e('Pre-made premium templates','m-shop'); ?> </b><br>
+            <?php _e('M Shop Pro is one of the most popular eCommerce theme on WordPress.','m-shop'); ?> </p>
                 <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/m-shop-pro/"><?php _e('Upgrade','m-shop'); ?> </a></center>
             </div>
             <hr>
