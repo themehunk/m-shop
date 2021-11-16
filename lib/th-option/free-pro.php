@@ -248,10 +248,10 @@
                     <tr class="feature-row th-buy-pro">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Get Pro Theme','m-shop'); ?> </h4>
+                           <h4><?php _e('Pro Theme','m-shop'); ?> </h4>
                         </div>
                      </td>
-                     <td class="status upsell"><?php _e('Get access to all Pro features','m-shop'); ?> </td>
+                     <td class="status upsell"><?php _e('Access to all Pro features','m-shop'); ?> </td>
                      <td class="status success"><a href="https://themehunk.com/product/m-shop-pro/" target="_blank" rel="external noreferrer noopener" class="components-button is-primary"><?php _e('Get M Shop Pro Now','m-shop'); ?></a></td>
                   </tr>
 
