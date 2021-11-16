@@ -56,6 +56,19 @@
                   </tr>
 
 
+                    <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Top Slider Section','m-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Two Layouts)','m-shop'); ?> </span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Six Layouts)','m-shop'); ?> </span></td>
+
+                  </tr>
+
+
 
                   <tr class="feature-row">
                      <td class="title">
@@ -98,6 +111,51 @@
                      </td>
 
                   </tr>
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Banner Section','m-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(Two Layouts)','m-shop'); ?> </span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(Four Layouts)','m-shop'); ?> </span></td>
+
+                  </tr>
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Highlight Section','m-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+
+                  </tr>
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Product Quick View','m-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                     </td>
+
+                  </tr>
+
 
 
 
