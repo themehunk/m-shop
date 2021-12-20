@@ -6996,23 +6996,6 @@ text-decoration: underline !important;
 }   
 
 
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type.loading:before{
--webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-} 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-
-
-
-
 /*th-compare-button animation */
 .thunk-woo-product-list .thunk-compare .compare-button a.loading:before{
 -webkit-animation: spin 1s linear infinite;
@@ -7041,7 +7024,25 @@ text-decoration: underline !important;
   100% { transform: rotate(360deg); }
 }
 
+/*for single page */
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type.loading:before{
+-webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+} 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .woocommerce a.button.th-product-compare-btn.loading::after{
+  display: none;
+}
+
+.woocommerce .entry-summary .th-product-compare-btn.loading::after{
   display: none;
 }
 
