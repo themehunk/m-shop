@@ -24,6 +24,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.1.5 =
+* Side pan issue fixed in mobile.
+
 = 1.1.4 =
 * Th option panel updated.
 * Child theme notification modification work.
