@@ -761,8 +761,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 				/****************/
 				// add to compare
 				/****************/
-
-
+				
 				function m_shop_add_to_thcompare_fltr(){
 			global $product;
       $product_id = $product->get_id();
@@ -771,9 +770,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
           <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
           </div></span></div>';
 
-           }
-
-           if( ( class_exists( 'WPCleverWooscp' ))){
+           }elseif( ( class_exists( 'WPCleverWooscp' ))){
            echo '<div class="thunk-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
          }
 
@@ -789,9 +786,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
           <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
           </div></span></div>';
 
-           }
-
-           if( ( class_exists( 'WPCleverWooscp' ))){
+           }elseif( ( class_exists( 'WPCleverWooscp' ))){
            echo '<div class="thunk-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
          }
 
@@ -805,9 +800,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 					        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) && (! class_exists( 'WPCleverWoosw' ))){
 					        echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist icon="fa fa-heart" label='.__('wishlist','m-shop').'
 					         already_in_wishslist_text='.__('Already','m-shop').' browse_wishlist_text='.__('Added','m-shop').']' ).'</span></div>';
-					       }
-
-				if( ( class_exists( 'WPCleverWoosw' ))){
+					       }elseif( ( class_exists( 'WPCleverWoosw' ))){
         		echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[woosw id='.$pid.']').'</span></div>';
        }
 					 }
