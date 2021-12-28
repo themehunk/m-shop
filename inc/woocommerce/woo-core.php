@@ -393,16 +393,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 			$localize['qv_loader'] = $loader;
 			return $localize;
 		}
-		/****************/
-        // add to compare
-        /****************/
-        
-        /*function m_shop_add_to_compare($pid=''){
-        if( is_plugin_active('yith-woocommerce-compare/init.php') ){
-          return '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.$pid.'" class="compare button" data-product_id="'.$pid.'" rel="nofollow">Compare</a></div></span></div>';
-
-           }
-        }*/
+		
 
 		/**
 		 * Quick view on image
@@ -759,9 +750,9 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 				    
 				    echo '</div>';
 				  }
-				/****************/
-				// add to compare
-				/****************/
+				/**********************/
+				// Th Product Compare
+				/**********************/
 				
 				function m_shop_add_to_compare_fltr(){
 			global $product;

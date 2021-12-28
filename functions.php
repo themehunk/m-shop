@@ -115,6 +115,11 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
             'img' => 'icon-128x128.gif',
             'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
             ),
+            'th-product-compare' => array(
+                 'name' => esc_html__( 'Th Product Compare', 'm-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-product-compare/th-product-compare.php',
+             ),
             'th-variation-swatches' => array(
                 'name' => esc_html__( 'TH Variation Swatches', 'm-shop' ),
                  'img' => 'icon-128x128.gif',
@@ -141,12 +146,7 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                   'img' => 'icon-128x128.jpg',
                  'active_filename' => 'yith-woocommerce-wishlist/init.php',
              ),
-            'yith-woocommerce-compare' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Compare', 'm-shop' ),
-                  'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-compare/init.php',
-             ),
-
+            
             'themehunk-megamenu-plus' => array(
                 'name' => esc_html__( 'ThemeHunk Megamenu – Menu builder', 'm-shop' ),
                 'img' => 'icon-128x128.png',

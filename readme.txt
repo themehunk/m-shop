@@ -26,6 +26,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.1.6 =
 * Th product compare plugin added.
+* Th advance product search plugin issue fixed.
 
 = 1.1.5 =
 * Side pan issue fixed in mobile.

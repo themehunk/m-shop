@@ -4663,6 +4663,7 @@ top:0em!important;
         border-radius: 3px;
 }
 /*compare style*/
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type,
 .woocommerce .entry-summary a.compare.button{
 border: 1px solid;
     border-radius: 0;
@@ -4678,6 +4679,10 @@ border: 1px solid;
     font-weight: normal;
     min-width: auto;
 }
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
+  line-height: 25px;
+}
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
 .woocommerce .entry-summary a.compare.button:before{
 content: "\f021";
     font-family: FontAwesome;
@@ -6964,38 +6969,6 @@ text-decoration: underline !important;
 
 
 
-/*th product compare plugin integration */
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before {
-    content: "\f021";
-    font-family: FontAwesome;
-    display: block;
-    color: #9c9c9c;
-    font-size: 1rem;
-}
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type {
-    border: 1px solid;
-    border-radius: 0;
-    color: #9c9c9c;
-    display: inline-block;
-    font-size: 0;
-    height: 45px;
-    padding-top: 12px;
-    width: 45px;
-    background: transparent;
-    text-align: center;
-    margin-left: 0.5rem;
-    font-weight: normal;
-    min-width: auto;
-}
-.woocommerce .entry-summary .th-product-compare-btn {
-    margin: 0;
-    }
-
-.woocommerce .entry-summary .th-product-compare-btn-wrap {
-    display: inline-block;
-}   
-
-
 /*th-compare-button animation */
 .thunk-woo-product-list .thunk-compare .compare-button a.loading:before{
 -webkit-animation: spin 1s linear infinite;
@@ -7037,16 +7010,19 @@ text-decoration: underline !important;
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.woocommerce .entry-summary .th-product-compare-btn {
+    margin: 0;
+    }
 
+ .woocommerce .entry-summary .th-product-compare-btn-wrap {
+    display: inline-block;
+}   
 .woocommerce a.button.th-product-compare-btn.loading::after{
   display: none;
 }
-
 .woocommerce .entry-summary .th-product-compare-btn.loading::after{
   display: none;
 }
-
-
 
 
 @media screen and (max-width: 1250px){
