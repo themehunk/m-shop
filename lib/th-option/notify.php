@@ -15,12 +15,12 @@ class ThemeHunk_Child_Notify{
 		}
 
 
-		if(!isset($_COOKIE['thf_time'])) {
+		if(!isset($_COOKIE['thms_time'])) {
 			 add_action( 'admin_notices', array($this,'notify'));
 
 		}
 
-		if(isset($_COOKIE['thf_time'])) {
+		if(isset($_COOKIE['thms_time'])) {
 			add_action( 'admin_notices', array($this,'unset_cookie'));
 		}
 
@@ -33,10 +33,10 @@ class ThemeHunk_Child_Notify{
 
 			$cok_time = time()+(86457*30);
  
-		if(!isset($_COOKIE['thf_time'])) {
+		if(!isset($_COOKIE['thms_time'])) {
  
 			// set a cookie for 1 year
-		setcookie('thf_time', $cok_time, time()+(86457*30));
+		setcookie('thms_time', $cok_time, time()+(86457*30));
 			 
 		}
  
@@ -45,10 +45,10 @@ class ThemeHunk_Child_Notify{
 		function unset_cookie(){
 
 			$visit_time = time();
-  			$cookie_time = $_COOKIE['thf_time'];
+  			$cookie_time = $_COOKIE['thms_time'];
 
 			if ($cookie_time < $visit_time) {
-				setcookie('thf_time', null, strtotime('-1 day'));
+				setcookie('thms_time', null, strtotime('-1 day'));
 			}
 	}
 
@@ -66,14 +66,14 @@ class ThemeHunk_Child_Notify{
           	<h1>
         <?php
         /* translators: %1$s: theme name, %2$s theme version */
-        printf( esc_html__( 'Welcome to %1$s - Version %2$s', 'featuredlite' ), esc_html( $my_theme->Name ), esc_html( $my_theme->Version ) );
+        printf( esc_html__( 'Welcome to %1$s - Version %2$s', 'm-shop' ), esc_html( $my_theme->Name ), esc_html( $my_theme->Version ) );
         ?>
       </h1>
 
-        <p><?php _e( "Get Started with ".esc_html( $my_theme->Name )." and Start customizing your website, also Install the Child theme if you want to edit the core code of the theme.", 'featuredlite' ); ?></p>
-        <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class="button button-primary th-blue"><?php _e('Get Started with '.esc_html( $my_theme->Name ),'featuredlite') ?></a>
+        <p><?php _e( "Get Started with ".esc_html( $my_theme->Name )." and Start customizing your website, also Install the Child theme if you want to edit the core code of the theme.", 'm-shop' ); ?></p>
+        <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class="button button-primary th-blue"><?php _e('Get Started with '.esc_html( $my_theme->Name ),'m-shop') ?></a>
 
-        <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class=" button-secondary"><?php _e('Get Child Theme Now','featuredlite') ?></a>
+        <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class=" button-secondary"><?php _e('Get Child Theme Now','m-shop') ?></a>
 
         <a href="?notice-disable=1"  class="notice-dismiss dashicons dashicons-dismiss dashicons-dismiss-icon"></a>
     </div> 

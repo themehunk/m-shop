@@ -4679,9 +4679,6 @@ border: 1px solid;
     font-weight: normal;
     min-width: auto;
 }
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
-  line-height: 25px;
-}
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
 .woocommerce .entry-summary a.compare.button:before{
 content: "\f021";
