@@ -69,6 +69,10 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
         add_theme_support( 'responsive-embeds' );
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
+
+		// Remove theme support for widget block editor
+		remove_theme_support( 'widgets-block-editor' );
+
 		/**
 		 * Add support for core custom logo.
 		 */

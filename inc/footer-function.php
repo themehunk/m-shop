@@ -223,43 +223,7 @@ $m_shop_bottom_footer_widget_layout  = get_theme_mod( 'm_shop_bottom_footer_widg
 <?php }
 }
 add_action( 'm_shop_widget_footer', 'm_shop_widget_footer_markup' );
-/**************************************/
-//Below footer function
-/**************************************/
-if ( ! function_exists( 'm_shop_below_footer_markup' ) ){  
-function m_shop_below_footer_markup(){ ?>  
-<?php 
-$m_shop_bottom_footer_layout  = get_theme_mod( 'm_shop_bottom_footer_layout','ft-btm-one');
-$m_shop_bottom_footer_col1_set= get_theme_mod( 'm_shop_bottom_footer_col1_set','text');
-$m_shop_bottom_footer_col2_set= get_theme_mod( 'm_shop_bottom_footer_col2_set','text');
-$m_shop_bottom_footer_col3_set= get_theme_mod( 'm_shop_bottom_footer_col3_set','text');
-?>		
-<div class="below-footer">
-			<div class="container">
-				 <?php if($m_shop_bottom_footer_layout=='ft-btm-one'):?>  
-				<div class="below-footer-bar thnk-col-1">
-					<div class="below-footer-col1"> 
-						<?php m_shop_bottom_footer_conetnt_col1($m_shop_bottom_footer_col1_set); ?>
-						</div>
-                </div>
-                 <?php elseif($m_shop_bottom_footer_layout=='ft-btm-two'):?>
-                  <div class="below-footer-bar thnk-col-2">
-                   	<div class="below-footer-col1"> <?php m_shop_bottom_footer_conetnt_col1($m_shop_bottom_footer_col1_set); ?></div>
-					<div class="below-footer-col2"> <?php m_shop_bottom_footer_conetnt_col2($m_shop_bottom_footer_col2_set); ?></div>
-				</div>
-				<?php elseif($m_shop_bottom_footer_layout=='ft-btm-three'):?>
-				<div class="below-footer-bar thnk-col-3">
-                   	<div class="below-footer-col1"> <?php m_shop_bottom_footer_conetnt_col1($m_shop_bottom_footer_col1_set); ?></div>
-					<div class="below-footer-col2"> <?php m_shop_bottom_footer_conetnt_col2($m_shop_bottom_footer_col2_set); ?></div>
-					<div class="below-footer-col3"> <?php m_shop_bottom_footer_conetnt_col3($m_shop_bottom_footer_col3_set); ?></div>
-				</div>
-			<?php endif; ?>
-				
-			</div>
-		</div>  
-<?php }
-}
-add_action( 'm_shop_below_footer', 'm_shop_below_footer_markup' );
+
 /**********************/
 // footer function
 /************************/
@@ -388,74 +352,6 @@ elseif($content=='widget'){?>
       <a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>"><?php esc_html_e( 'Add Widget', 'm-shop' );?></a>
      <?php }?>
      </div>
-<?php }elseif($content=='social'){?>
-<div class="content-social">
-<?php echo m_shop_social_links();?>
-</div>
-<?php }elseif($content=='none'){
-return false;
-}?>
-<?php }
-}
-//************************************/
-// Footer bottom col2 function
-//************************************/
-if ( ! function_exists( 'm_shop_bottom_footer_conetnt_col2' ) ){ 
-function m_shop_bottom_footer_conetnt_col2($content){ ?>
-<?php if($content=='text'){?>
-<div class='content-html'>
-  <?php echo esc_html(get_theme_mod('m_shop_footer_bottom_col2_texthtml',  __( 'Add your content here', 'm-shop' )));?>
-</div>
-<?php }elseif($content=='menu'){
-  if ( has_nav_menu('m-shop-footer-menu' ) ) {?>
-<?php 
-  m_shop_footer_nav_menu();
- }else{?>
-<a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>"><?php esc_html_e( 'Assign footer menu', 'm-shop' );?></a>
- <?php }
-}
-elseif($content=='widget'){?>
-  <div class="content-widget">
-    <?php if( is_active_sidebar('footer-below-second')){
-    dynamic_sidebar('footer-below-second');
-          }else{ ?>
-      <a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>"><?php esc_html_e( 'Add Widget', 'm-shop' );?></a>
-        <?php } ?>
-  </div>
-<?php }elseif($content=='social'){?>
-<div class="content-social">
-<?php echo m_shop_social_links();?>
-</div>
-<?php }elseif($content=='none'){
-return false;
-}?>
-<?php }
-}
-//************************************/
-// Footer bottom col3 function
-//************************************/
-if ( ! function_exists( 'm_shop_bottom_footer_conetnt_col3' ) ){ 
-function m_shop_bottom_footer_conetnt_col3($content){ ?>
-<?php if($content=='text'){?>
-<div class='content-html'>
-  <?php echo esc_html(get_theme_mod('m_shop_bottom_footer_col3_texthtml',  __( 'Add your content here', 'm-shop' )));?>
-</div>
-<?php }elseif($content=='menu'){
-  if ( has_nav_menu('m-shop-footer-menu' ) ) {?>
-<?php 
-  m_shop_footer_nav_menu();
- }else{?>
-<a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>"><?php esc_html_e( 'Assign footer menu', 'm-shop' );?></a>
- <?php }
-}
-elseif($content=='widget'){?>
-  <div class="content-widget">
-    <?php if( is_active_sidebar('footer-below-third')){
-    dynamic_sidebar('footer-below-third');
-          }else{ ?>
-      <a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>"><?php esc_html_e( 'Add Widget', 'm-shop' );?></a>
-        <?php } ?>
-  </div>
 <?php }elseif($content=='social'){?>
 <div class="content-social">
 <?php echo m_shop_social_links();?>

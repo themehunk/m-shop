@@ -20,21 +20,25 @@ function menu_tab() {
 * Enqueue scripts for admin page only: Theme info page
 */
 function admin_scripts( $hook ) {
-if ($hook === 'appearance_page_thunk_started'  ) {
-wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
-wp_enqueue_script('m-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
+    if ($hook === 'appearance_page_thunk_started'  ) {
+    wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
+    wp_enqueue_script('m-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
 
-$data = apply_filters(
-                    'th_option_localize_vars',
-                    array(
-                        'oneClickDemo' =>esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' )),
+    $data = apply_filters(
+                        'th_option_localize_vars',
+                        array(
+                            'oneClickDemo' =>esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' )),
 
-                        )
-                );
-    wp_localize_script( 'm-shop-admin-load', 'THAdmin', $data); 
+                            )
+                    );
+        wp_localize_script( 'm-shop-admin-load', 'THAdmin', $data); 
 
 
-}
+    } else {
+
+    wp_enqueue_style( 'thunk-notify-css', get_template_directory_uri() . '/lib/th-option/assets/css/notify.css' );	
+    	
+    }
 }
 function tab_constant(){
     $theme_data = wp_get_theme();
@@ -42,7 +46,7 @@ function tab_constant(){
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','m-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
     'welcome'=>sprintf(esc_html__('Welcome To %1s Theme', 'm-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
-    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is an eCommerce WordPress theme specially made for shopping websites.', 'm-shop' ),
+    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' theme is an eCommerce WordPress theme specially made for shopping websites.', 'm-shop' ),
     'v'=> 'Version '.$theme_data->get( 'Version' )
     );
     return $tab_array;
