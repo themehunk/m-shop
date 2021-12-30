@@ -4663,6 +4663,7 @@ top:0em!important;
         border-radius: 3px;
 }
 /*compare style*/
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type,
 .woocommerce .entry-summary a.compare.button{
 border: 1px solid;
     border-radius: 0;
@@ -4678,6 +4679,10 @@ border: 1px solid;
     font-weight: normal;
     min-width: auto;
 }
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
+  line-height: 25px;
+}
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
 .woocommerce .entry-summary a.compare.button:before{
 content: "\f021";
     font-family: FontAwesome;
@@ -6961,6 +6966,64 @@ font-size:1.8rem;
 .main-header-col2 a.plugin-active-msg:hover{
 text-decoration: underline !important;
 }
+
+
+
+/*th-compare-button animation */
+.thunk-woo-product-list .thunk-compare .compare-button a.loading:before{
+-webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.woocommerce ul.products li .thunk-compare .compare-button a.loading:before{
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*for single page */
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type.loading:before{
+-webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+} 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.woocommerce .entry-summary .th-product-compare-btn {
+    margin: 0;
+    }
+
+ .woocommerce .entry-summary .th-product-compare-btn-wrap {
+    display: inline-block;
+}   
+.woocommerce a.button.th-product-compare-btn.loading::after{
+  display: none;
+}
+.woocommerce .entry-summary .th-product-compare-btn.loading::after{
+  display: none;
+}
+
 
 @media screen and (max-width: 1250px){
   #search-box #search-button {

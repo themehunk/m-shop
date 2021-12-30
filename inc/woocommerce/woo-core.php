@@ -393,15 +393,8 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 			$localize['qv_loader'] = $loader;
 			return $localize;
 		}
-		/****************/
-        // add to compare
-        /****************/
-        function m_shop_add_to_compare($pid=''){
-        if( is_plugin_active('yith-woocommerce-compare/init.php') ){
-          return '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.$pid.'" class="compare button" data-product_id="'.$pid.'" rel="nofollow">Compare</a></div></span></div>';
+		
 
-           }
-        }
 		/**
 		 * Quick view on image
 		 */
@@ -529,6 +522,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
             remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 			add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs',40 );
 			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+			
 			/* Display Related Products */
 			if ( ! get_theme_mod( 'm_shop_related_product_display',true ) ) {
 				remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
@@ -756,31 +750,34 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 				    
 				    echo '</div>';
 				  }
-				/****************/
-				// add to compare
-				/****************/
-				public function m_shop_add_to_compare_fltr($pid){
-				  global $product;
-				      $product_id = $product->get_id();
-				        if( is_plugin_active('yith-woocommerce-compare/init.php') && (! class_exists( 'WPCleverWooscp' ))){
-				          echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.$product_id.'" class="compare button" data-product_id="'.$product_id.'" rel="nofollow">Compare</a></div></span></div>';
+				/**********************/
+				// Th Product Compare
+				/**********************/
+				
+				function m_shop_add_to_compare_fltr(){
+			global $product;
+      $product_id = $product->get_id();
+    if(class_exists(('th_product_compare') ) ){
+    echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
+          <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
+          </div></span></div>';
 
-				           }
-				        if( ( class_exists( 'WPCleverWooscp' ))){
+           }elseif( ( class_exists( 'WPCleverWooscp' ))){
            echo '<div class="thunk-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
          }
-				        }
+
+        }
+
+
 
 					/**********************/
 					/** wishlist **/
 					/**********************/
 					public function m_shop_whish_list($pid=''){
-					        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) && (! class_exists( 'WPCleverWoosw' ))){
+					        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) ){
 					        echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist icon="fa fa-heart" label='.__('wishlist','m-shop').'
 					         already_in_wishslist_text='.__('Already','m-shop').' browse_wishlist_text='.__('Added','m-shop').']' ).'</span></div>';
-					       }
-
-				if( ( class_exists( 'WPCleverWoosw' ))){
+					       }elseif( ( class_exists( 'WPCleverWoosw' ))){
         		echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[woosw id='.$pid.']').'</span></div>';
        }
 					 }

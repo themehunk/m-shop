@@ -1,0 +1,21 @@
+#customize-controls .control-section-m-shop-1 .accordion-section-title:hover,
+#customize-controls .control-section-m-shop-1 .accordion-section-title:focus {
+	background-color: #fff;
+}
+
+.control-section-m-shop-1 .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+	.rtl .control-section-m-shop-1 .accordion-section-title .button {
+		margin-left:  0;
+		margin-right: 8px;
+	}
+
+a.button.pro-button-secondary.alignright {
+    background: #2e78ff;
+    color: white;
+    border: 1px;
+}
