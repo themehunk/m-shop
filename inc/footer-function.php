@@ -361,3 +361,36 @@ return false;
 }?>
 <?php }
 }
+
+/**************************************/
+//Below footer function
+/**************************************/
+if ( ! function_exists( 'm_shop_below_footer_markup' ) ){  
+function m_shop_below_footer_markup(){ ?>   
+<div class="below-footer">
+      <div class="container">
+        <div class="below-footer-bar thnk-col-1">
+          <div class="below-footer-col1"> 
+           <p class="footer-copyright">&copy;
+              <?php
+              echo date_i18n(
+                /* translators: Copyright date format, see https://www.php.net/date */
+                _x( 'Y', 'copyright date format', 'jot-shop' )
+              );
+              ?>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+              <span class="powered-by-wordpress">
+              <span><?php _e( 'Designed by', 'jot-shop' ); ?></span>
+              <a href="<?php echo esc_url( __( 'https://themehunk.com/', 'jot-shop' ) ); ?>" target="_blank">
+                <?php _e( 'Themehunk', 'jot-shop' ); ?>
+              </a>
+            </span>
+            </p><!-- .footer-copyright -->
+           </div>
+        </div>
+      </div>
+</div>
+                  
+<?php }
+}
+add_action( 'm_shop_below_footer', 'm_shop_below_footer_markup' );
