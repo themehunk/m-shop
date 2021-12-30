@@ -4680,7 +4680,7 @@ border: 1px solid;
     min-width: auto;
 }
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type{
-  line-height: 25px;
+  line-height: 45px;
 }
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
 .woocommerce .entry-summary a.compare.button:before{
@@ -7012,6 +7012,7 @@ text-decoration: underline !important;
 }
 .woocommerce .entry-summary .th-product-compare-btn {
     margin: 0;
+    padding: 0;
     }
 
  .woocommerce .entry-summary .th-product-compare-btn-wrap {
