@@ -31,10 +31,10 @@
 		<a class="skip-link screen-reader-text" href="#content">
 			<?php _e( 'Skip to content', 'm-shop' ); ?>	
 		</a>	
-        <?php do_action( 'm_shop_main_header' ); ?> 
-           
+        <?php do_action( 'm_shop_main_header' ); ?>           
 </header> 
 <div class="header-pan-icon" >
 			<a href="#" class="pan-icon" ></a>
+
 	    </div>	
 <!-- end header -->

@@ -25,7 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 = 1.1.7 =
-* Footer copyright added.
+* Footer below copyright added.
 
 = 1.1.6 =
 * Th product compare plugin added.
