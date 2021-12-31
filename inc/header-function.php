@@ -70,7 +70,8 @@ function m_shop_main_header_optn(){
                      <?php }?>  
                   </div> 
                 <?php endif;} elseif(get_theme_mod('m_shop_cart_mobile_disable')==false){?>
-                              <div class="thunk-icon">  
+                              <div class="thunk-icon">
+
                 <?php if(class_exists( 'WooCommerce' )){ ?>
                  
                       <div class="cart-icon" > 

@@ -4679,6 +4679,12 @@ border: 1px solid;
     font-weight: normal;
     min-width: auto;
 }
+<<<<<<< HEAD
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
+  line-height: 45px;
+}
+=======
+>>>>>>> 855ed987663b83f32c02d2539131ce6036059501
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
 .woocommerce .entry-summary a.compare.button:before{
 content: "\f021";
@@ -7009,6 +7015,7 @@ text-decoration: underline !important;
 }
 .woocommerce .entry-summary .th-product-compare-btn {
     margin: 0;
+    padding: 0;
     }
 
  .woocommerce .entry-summary .th-product-compare-btn-wrap {
