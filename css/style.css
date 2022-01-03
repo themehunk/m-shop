@@ -7025,11 +7025,6 @@ text-decoration: underline !important;
   display: none;
 }
 
-/* all in one shopping cart plugin */
-
-.taiowc-cart-item{
-  padding: 0;
-}
 
 /* footer copyright */
 p.footer-copyright{
@@ -7040,12 +7035,15 @@ color:#fff;
   color: #f2f2f2;
 }
 
-/*plugin competible*/
+/* all in one shopping cart plugin */
+.taiowc-cart-item{
+  padding: 0;
+}
 .header-support-icon .thunk-icon{
     text-align: initial;
 }
 .header-support-icon .thunk-icon .cart-count-item{
-background: #ddd;
+    background: #ddd;
     height: 25px;
     width: 25px;
     line-height: 25px;
@@ -7053,6 +7051,9 @@ background: #ddd;
     text-align: center;
     font-size: 0.7rem;
 }
+
+
+
 
 @media screen and (max-width: 1250px){
   #search-box #search-button {
