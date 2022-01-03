@@ -27,6 +27,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 = 1.1.7 =
 * Footer below copyright added.
 * Footer copyright color issue fixed.
+* M-shop cart icon function removed.
+* M-shop Woo cart function removed.
 
 = 1.1.6 =
 * Th product compare plugin added.
