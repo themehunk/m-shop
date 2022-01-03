@@ -8,7 +8,7 @@
  * @since 1.0.0
  */ 
 ?>
-<footer>
+<footer class="m-shop-footer">
          <?php 
           // top-footer 
           do_action( 'm_shop_top_footer' ); 
