@@ -954,11 +954,11 @@ aside.m-shop-sidebar {
   top: 112px;
 }
 
-footer {
+footer.m-shop-footer {
     padding-left: 22rem;
     padding-right: 0;
 }
-.right-side footer {
+.right-side footer.m-shop-footer {
     padding-right: 22rem;
     padding-left: 0;
 }
@@ -7040,6 +7040,19 @@ color:#fff;
   color: #f2f2f2;
 }
 
+/*plugin competible*/
+.header-support-icon .thunk-icon{
+    text-align: initial;
+}
+.header-support-icon .thunk-icon .cart-count-item{
+background: #ddd;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    color: #111;
+    text-align: center;
+    font-size: 0.7rem;
+}
 
 @media screen and (max-width: 1250px){
   #search-box #search-button {
@@ -7555,4 +7568,9 @@ aside.m-shop-sidebar{
 .side-pan-active .header-pan-icon a {
     left: 18rem;
 }
+
+.taiowc-content .taiowc-total{
+  display: none;
+}
+
 }
