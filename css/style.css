@@ -7031,6 +7031,15 @@ text-decoration: underline !important;
   padding: 0;
 }
 
+/* footer copyright */
+p.footer-copyright{
+color:#fff;
+}
+
+.footer-copyright a{
+  color: #f2f2f2;
+}
+
 
 @media screen and (max-width: 1250px){
   #search-box #search-button {

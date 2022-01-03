@@ -40,7 +40,7 @@ $m_shop_style.=".thunk-woo-product-list .thunk-product-wrap .opn-quick-view-text
 .woocommerce ul.products li.product .star-rating a:before,
 .widget.woocommerce .product_list_widget .star-rating,
 .widget.woocommerce .product_list_widget .star-rating:before,
-.woocommerce .star-rating,header #open-cart .cart-close-btn:hover,.header-icon a:hover, .footer-copyright {color:{$m_shop_theme_clr};}
+.woocommerce .star-rating,header #open-cart .cart-close-btn:hover,.header-icon a:hover {color:{$m_shop_theme_clr};}
 
 .open-cart p.buttons a:hover,.woocommerce .woocommerce-message .button,.thunk-slide .owl-nav button.owl-prev:hover, .thunk-slide .owl-nav button.owl-next:hover,.woocommerce #respond input#submit, #comments .submit,button, .button, input[type='button'], input[type='reset'], input[type='submit'],.woocommerce #content div.product div.summary .prev_next_buttons a:hover,.woocommerce.widget_shopping_cart .buttons a,.product_cat_view a:hover{border-color:{$m_shop_theme_clr};}
 .loader {
@@ -93,7 +93,7 @@ $m_shop_link_clr       = esc_html(get_theme_mod('m_shop_link_clr'));
 $m_shop_link_hvr_clr   = esc_html(get_theme_mod('m_shop_link_hvr_clr'));
 $m_shop_text_clr       = esc_html(get_theme_mod('m_shop_text_clr'));
 $m_shop_title_clr   = esc_html(get_theme_mod('m_shop_title_clr'));
-$m_shop_style.=".page-head h1{color{$m_shop_title_clr};} .primary-content-wrap article,.breadcrumb-m_shop_trail{color:{$m_shop_text_clr};} .primary-content-wrap a, .footer-copyright a{color:{$m_shop_link_clr};}  .primary-content-wrap a:hover, .footer-copyright a:hover{color:{$m_shop_link_hvr_clr};}";
+$m_shop_style.=".page-head h1{color{$m_shop_title_clr};} .primary-content-wrap article,.breadcrumb-m_shop_trail{color:{$m_shop_text_clr};} .primary-content-wrap a{color:{$m_shop_link_clr};}  .primary-content-wrap a:hover, .footer-copyright a:hover{color:{$m_shop_link_hvr_clr};}";
   return $m_shop_style;
 }
 
