@@ -60,27 +60,25 @@ function m_shop_main_header_optn(){
                          if (wp_is_mobile()!== true):?>
                 <div class="thunk-icon">  
                 <?php if(class_exists( 'WooCommerce' )){ ?>
+
+
+                   <?php if ( shortcode_exists( 'taiowc' ) ){
+                        echo do_shortcode('[taiowc]');
+                    } ?>
                  
-                      <div class="cart-icon" > 
-                         <?php 
-                         do_action( 'm_shop_cart_icon' );
-                         do_action( 'm_shop_woo_cart' ); 
-                         ?>
-                       </div>
                      <?php }?>  
                   </div> 
                 <?php endif;} elseif(get_theme_mod('m_shop_cart_mobile_disable')==false){?>
                               <div class="thunk-icon">
 
                 <?php if(class_exists( 'WooCommerce' )){ ?>
+
+                   <?php if ( shortcode_exists( 'taiowc' ) ){
+                        echo do_shortcode('[taiowc]');
+                    } ?>
                  
-                      <div class="cart-icon" > 
-                         <?php 
-                         do_action( 'm_shop_cart_icon' );
-                         do_action( 'm_shop_woo_cart' ); 
-                         ?>
-                       </div>
-                     <?php }?>  
+                      
+                     <?php  }?>  
                   </div> 
                 <?php }?>
               </div>  
