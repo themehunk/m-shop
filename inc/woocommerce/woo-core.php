@@ -275,7 +275,12 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 			  }
 		
 		   }
-			return $classes;
+
+		   if(class_exists('Taiowc_Pro')){
+                $classes[] ='taiowc-fly-cart';
+			}
+			
+		   return $classes;
 		}
 		/**
 		 * Infinite Products Show on scroll
