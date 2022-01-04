@@ -275,6 +275,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 			  }
 		
 		   }
+
 			if(class_exists('Taiowc_Pro')){
                 $classes[] ='taiowc-fly-cart';
 			}
