@@ -273,14 +273,11 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 			if(count($attachment_ids) > '0'){
                 $classes[] ='m-shop-slide-item-hover';
 			  }
-
-			  if(class_exists('Taiowc_Pro')){
-                $classes[] ='taiowc-fly-cart';
-			}
-
-
 		
 		   }
+			if(class_exists('Taiowc_Pro')){
+                $classes[] ='taiowc-fly-cart';
+			}
 			return $classes;
 		}
 		/**
