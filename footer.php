@@ -15,9 +15,12 @@
           // widget-footer
 		  do_action( 'm_shop_widget_footer' );
 		  // below-footer
-          do_action( 'm_shop_default_below_footer'); 
 
-          do_action( 'm_shop_below_footer' ); 
+        if(has_action('m_shop_below_footer')){
+            do_action( 'm_shop_below_footer' ); 
+        }else{
+            do_action( 'm_shop_default_below_footer'); 
+        }
 
         ?>
        
