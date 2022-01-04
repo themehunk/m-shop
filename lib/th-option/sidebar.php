@@ -4,7 +4,6 @@
                 <span><?php _e('M Shop Premium Theme','m-shop'); ?> </span>
             </h3>
             <p>
-            <b><?php _e('Pre-made premium templates','m-shop'); ?> </b><br>
             <?php _e('If you like the free version of this theme, you will LOVE the full version of M Shop which includes numerous  Advanced features, Custom Sections, Section Ordering and more useful options to customize your website.','m-shop'); ?> </p>
                 <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/m-shop-pro/"><?php _e('Upgrade To M shop Premium ','m-shop'); ?> </a></center>
             </div>
