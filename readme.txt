@@ -31,6 +31,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * M-shop Woo cart function removed.
 * M-shop double footer issue fixed.
 * M-shop th option panel sidebar text changed.
+* M-shop th all in one woo cart plugin class taiowc-fly-cart added.
+
 
 = 1.1.6 =
 * Th product compare plugin added.
