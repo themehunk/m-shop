@@ -353,7 +353,7 @@ function m_shop_scripts(){
 	wp_enqueue_style( 'm-shop-style', get_stylesheet_uri(), array(), M_SHOP_THEME_VERSION );
 	wp_add_inline_style('m-shop-style', m_shop_custom_style());
     //enqueue js
-    wp_enqueue_script("jquery-effects-core",array( 'jquery' ));
+    //wp_enqueue_script("jquery-effects-core",array( 'jquery' ));
     wp_enqueue_script( 'jquery-ui-autocomplete',array( 'jquery' ),'',true );
     wp_enqueue_script('imagesloaded');
     wp_enqueue_script('m-shop-menu-js', M_SHOP_THEME_URI .'/js/m-shop-menu.js', array( 'jquery' ), '1.0.0', true );
