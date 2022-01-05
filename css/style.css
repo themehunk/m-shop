@@ -4663,8 +4663,7 @@ top:0em!important;
         border-radius: 3px;
 }
 /*compare style*/
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type,
-.woocommerce .entry-summary a.compare.button{
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
 border: 1px solid;
     border-radius: 0;
     color: #9c9c9c;
@@ -4682,8 +4681,7 @@ border: 1px solid;
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type{
   line-height: 45px;
 }
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before,
-.woocommerce .entry-summary a.compare.button:before{
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before{
   content: "\f021";
     font-family: FontAwesome;
     display: block;

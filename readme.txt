@@ -4,7 +4,7 @@ Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, fou
 Requires at least: WordPress 4.7
 Requires PHP: 5.3
 Tested up to: 5.8.2
-Stable tag: 1.1.7
+Stable tag: 1.1.9
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -24,15 +24,19 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.1.9 =
+* Yith compare and wcp smart compare style removed.
+
+= 1.1.8 =
+* Footer copyright color issue fixed.
+* cart icon function removed.
+* Woo cart function removed.
+* double footer issue fixed.
+* th option panel sidebar text changed.
+* th all in one woo cart plugin class taiowc-fly-cart added.
+
 = 1.1.7 =
 * Footer below copyright added.
-* Footer copyright color issue fixed.
-* M-shop cart icon function removed.
-* M-shop Woo cart function removed.
-* M-shop double footer issue fixed.
-* M-shop th option panel sidebar text changed.
-* M-shop th all in one woo cart plugin class taiowc-fly-cart added.
-
 
 = 1.1.6 =
 * Th product compare plugin added.
