@@ -766,9 +766,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
           <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
           </div></span></div>';
 
-           }elseif( ( class_exists( 'WPCleverWooscp' ))){
-           echo '<div class="thunk-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
-         }
+           }
 
         }
 
