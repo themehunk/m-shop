@@ -17,15 +17,19 @@
 		  // below-footer
 
         if(has_action('m_shop_below_footer')){
+
             do_action( 'm_shop_below_footer' ); 
+
         }else{
-            do_action( 'm_shop_default_below_footer'); 
+
+            do_action( 'm_shop_default_below_footer');
+
         }
 
         ?>
        
      </footer> <!-- end footer -->
-    </div> <!-- end mshop-site -->
+ </div> <!-- end mshop-site -->
 <?php wp_footer(); ?>
 </body>
 </html>

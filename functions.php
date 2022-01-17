@@ -183,6 +183,18 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                 'img' => 'icon-128x128.png',
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
+            'th-advance-product-search' => array(
+            'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
+            'img' => 'icon-128x128.gif',
+            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
+            ),
+
+            'th-all-in-one-woo-cart' => array(
+                 'name' => esc_html__( 'TH All In One Woo Cart', 'm-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
+             ),
+
 
         ));
 

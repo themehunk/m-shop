@@ -361,13 +361,9 @@ return false;
 }?>
 <?php }
 }
-
-
-
 /**************************************/
 //Below footer function
 /**************************************/
-
 if ( ! function_exists( 'm_shop_below_footer_markup' ) ){  
 	function m_shop_below_footer_markup(){ ?>   
 	<div class="below-footer">
@@ -392,8 +388,7 @@ if ( ! function_exists( 'm_shop_below_footer_markup' ) ){
 			   </div>
 			</div>
 		  </div>
-	</div>
-					  
+	</div>			  
 	<?php }
-	}
-	add_action( 'm_shop_default_below_footer', 'm_shop_below_footer_markup' );
+}
+add_action( 'm_shop_default_below_footer', 'm_shop_below_footer_markup' );
