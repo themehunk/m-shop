@@ -119,3 +119,6 @@ add_filter( 'woosw_button_position_archive', function() {
 add_filter( 'filter_wooscp_button_archive', function() {
     return '0';
 } );
+
+//for shop page
+remove_action('woocommerce_init','th_compare_add_action_shop_list');

@@ -923,7 +923,7 @@ main #content {
     overflow: hidden;
 }
 .page-template-frontpage main #content{
-padding-top: 5rem;
+padding-top:6.2rem;
 }
 .main-area {
     display: block;
@@ -979,7 +979,7 @@ img.custom-logo{
 }
 .main-header{
     position: relative;
-    padding: .75rem 0rem;
+    padding: 1rem 0rem;
 }
 .main-header:before {
     content: "";
@@ -1030,10 +1030,10 @@ header .mobile-nav-bar.sider.right {
 
 /*------------site title-----------------*/
 .site-title span {
-    font-size:1.7rem;
+    font-size:1.2rem;
 }
 .site-description p{
-   font-size:1rem;
+   font-size:0.89rem;
 }
 /*  WPC ICONS   */
 .thunk-product .woosw-btn:before,
@@ -6720,7 +6720,7 @@ img:first-of-type{
     transform: translate(100%, 0px);
 }
 .customize-partial-edit-shortcuts-shown aside.m-shop-sidebar{
-top:88px;
+top:82px;
 }
 .container{
     position: relative;
@@ -7050,6 +7050,11 @@ color:#fff;
     font-size: 0.7rem;
 }
 
+/*cart style*/
+.cart-plugin-active-msg{
+padding-top: 8px;
+display: block;
+}
 
 
 
@@ -7351,6 +7356,9 @@ background:none!important;
 }
 }
 @media screen and (max-width: 767px){
+.main-header .taiowc-icon svg, .main-header .taiowc-icon img {
+    width: 1.7rem;
+}
   .main-header-col2,.right-side .main-header-col2,.left-side .main-header-col2{
 order:3;
 flex: auto;
@@ -7361,8 +7369,11 @@ order:2;
 .main-header-col3 {
 flex: auto;
 }
-#search-box {
-max-width: 100%;
+header{
+  height: auto;
+}
+.main-header .thaps-search-box {
+    max-width: 100%;
 }
 .main-header-bar{
   padding:0;
@@ -7371,7 +7382,7 @@ max-width: 100%;
   padding-bottom: 0.5rem;
 }
 .page-template-frontpage main #content ,main #content{
-    padding-top: 8rem;
+    padding-top:10rem;
 }
 .header-icon a, .thunk-icon .cart-icon a {
     font-size: 1.2rem;
@@ -7398,7 +7409,7 @@ max-width: 100%;
   }
  
   .primary-content-wrap {
-   padding: 1rem 0;
+   padding: 0;
   }
 .thunk-heading-wrap {
     flex-wrap: wrap;
@@ -7534,7 +7545,7 @@ margin-right:0.5rem;
     -webkit-line-clamp: 1;
 }
 .breadcrumb-m_shop_trail{
-  margin-top:1.2rem;
+  margin-top:0;
 }
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
     width:100%;

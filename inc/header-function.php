@@ -46,42 +46,52 @@ function m_shop_main_header_optn(){
           ?>
        <div class="header-support-wrap">  
         <div class="header-support-icon"> 
-          <?php if((m_shop_class_sidebar()=='right-side') || (m_shop_class_sidebar()=='left-side')){?>
+          <?php if((m_shop_class_sidebar()=='right-side') || (m_shop_class_sidebar()=='left-side')){ ?>
+
                  <div class="menu-toggle">
                     <button type="button" class="menu-btn" id="menu-btn">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span> 
                     </button>
-                </div>     
-                <?php }?> 
+                </div>   
+
+                <?php } ?> 
+
                 <?php m_shop_header_icon(); 
+
                 if(get_theme_mod('m_shop_cart_mobile_disable')==true){
-                         if (wp_is_mobile()!== true):?>
-                <div class="thunk-icon">  
-                <?php if(class_exists( 'WooCommerce' )){ ?>
 
+                if(wp_is_mobile()!== true):
 
-                   <?php if ( shortcode_exists( 'taiowc' ) ){
-                        echo do_shortcode('[taiowc]');
-                    } ?>
-                 
-                     <?php }?>  
-                  </div> 
-                <?php endif;} elseif(get_theme_mod('m_shop_cart_mobile_disable')==false){?>
-                              <div class="thunk-icon">
+                ?>
+
+                <div class="thunk-icon"> 
 
                 <?php if(class_exists( 'WooCommerce' )){ ?>
 
-                   <?php if ( shortcode_exists( 'taiowc' ) ){
-                        echo do_shortcode('[taiowc]');
-                    } ?>
-                 
-                      
-                     <?php  }?>  
-                  </div> 
-                <?php }?>
+                   <?php m_shop_th_cart(); ?>
+
+                <?php } ?>  
+
+                </div> 
+
+                <?php endif;} elseif(get_theme_mod('m_shop_cart_mobile_disable')==false){ ?>
+                
+                <div class="thunk-icon">
+
+                <?php if(class_exists('WooCommerce')){ ?>
+
+                   <?php m_shop_th_cart(); ?>
+                   
+                <?php  } ?>  
+
+                </div> 
+
+                <?php } ?>
+
               </div>  
+
           </div>
 <?php }
 /**************************************/
@@ -112,34 +122,6 @@ if( $description || is_customize_preview() ):?>
     } 
   }
 }
-/***************************/
-// Product search
-/***************************/
-function m_shop_product_search_box(){ ?>             
-<div id='search-box' class="wow thmkfadeInDown" data-wow-duration="1s">
-<form action='<?php echo esc_url( home_url( '/'  ) ); ?>' id='search-form' class="woocommerce-product-search" method='get' target='_top'>
-   <input id='search-text' name='s' placeholder='<?php echo esc_attr(get_theme_mod('search_box_text',esc_attr_x( 'Search for Product', 'placeholder', 'm-shop' ))); ?>' class="form-control search-autocomplete" value='<?php echo get_search_query(); ?>' type='text' title='<?php echo esc_attr_x( 'Search for:', 'label', 'm-shop' ); ?>' />
-   <div class="vert-brd" ></div>
-   <?php 
-if ( class_exists( 'WooCommerce' ) && get_theme_mod('m_shop_cat_search_disable')!==true):
-$args = array(
-   'taxonomy' => 'product_cat',
-   'name' => 'product_cat',
-  'orderby'    => 'menu_order',
-   'value_field' => 'slug',
-   'class' => 'ui-autocomplete-input',
-   'show_option_all'   => __('All Category','m-shop'),
-);
-wp_dropdown_categories( $args );
-endif;
-?>
-                        <button id='search-button' value="<?php echo esc_attr_x( 'Submit','submit button', 'm-shop' ); ?>" type='submit'>                     
-                          <?php echo esc_html__( 'Search', 'm-shop' ); ?>
-                        </button>
-                        <input type="hidden" name="post_type" value="product" />
-                       </form>
- </div>                    
-<?php }
 
 /**********************************/
 // header icon function
@@ -311,18 +293,64 @@ function m_shop_sidebar_panel(){
 //th advance product search 
 //*******************************
 function m_shop_th_advance_product_search(){
-  if ( shortcode_exists('th-aps') ){
+
+              if ( shortcode_exists('th-aps') ){
+
                 echo do_shortcode('[th-aps]');
+
               } elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
-                $url = admin_url('themes.php?page=thunk_started&searchp');
+
+                $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
+
                 $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
+
                 $url = (function_exists("m_shop_pro_load_plugin"))?$pro_url:$url;
 
-                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please Install "th advance product search" Plugin','m-shop').'</a>';
-                    }
+                ?>
+
+                <a target="_blank" class="plugin-active-msg" href="<?php echo esc_url($url);?>">
+
+                  <?php _e('Please Install "th advance product search" Plugin','m-shop');?>
+                  
+                </a>
+
+
+                <?php      
+
+            }
 }
 
+//********************************//
+//th woo cart 
+//*******************************//
 
+function m_shop_th_cart(){
+
+  if ( shortcode_exists('taiowc') ){
+
+                echo do_shortcode('[taiowc]');
+
+              } elseif ( !shortcode_exists('taiowc') && is_user_logged_in()) {
+
+                $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
+
+                $pro_url =admin_url('plugin-install.php?s=th%20all%20in%20one%20woo%20cart&tab=search&type=term');
+
+                $url = (function_exists("m_shop_pro_load_plugin"))?$pro_url:$url;
+
+                ?>
+
+                <a target="_blank" class="cart-plugin-active-msg" href="<?php echo esc_url($url);?>">
+
+                  <?php _e('Add Cart','m-shop');?>
+                  
+                </a>
+
+
+                <?php      
+
+            }
+}
 //**************************//
 //Side Bar Markup
 //**************************//
