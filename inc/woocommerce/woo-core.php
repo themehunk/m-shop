@@ -80,8 +80,9 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 			add_action( 'woocommerce_after_shop_loop_item',array($this, 'm_shop_product_meta_end') , 12 );
 
 			add_action( 'woocommerce_before_shop_loop_item_title','woocommerce_template_loop_product_link_open',5);
-
-			add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_product_link_close',20);
+			add_action( 'woocommerce_before_shop_loop_item_title','woocommerce_template_loop_product_link_close',10);
+			add_action( 'woocommerce_shop_loop_item_title','woocommerce_template_loop_product_link_open',0);
+			add_action( 'woocommerce_shop_loop_item_title','woocommerce_template_loop_product_link_close',10);
 
 			add_action( 'woocommerce_after_shop_loop_item_title','woocommerce_template_loop_rating' , 20);
 
