@@ -7083,11 +7083,26 @@ color:#fff;
 padding-top: 8px;
 display: block;
 }
-
+.taiowcp-cart-item{
+  padding: 0;
+}
 .sold-individually .m-shop-quantity {
     display: none;
 }
+.wc-item-meta .wc-item-meta-label, .wc-item-meta dt, dl.variation .wc-item-meta-label, dl.variation dt {
+    float: left;
+    clear: both;
+    margin-right: 0.25rem;
+    margin-top: 0;
+    list-style: none outside;
+    font-weight: 400;
+}
 
+.taiowcp-cart-model dd,.taiowc-cart-model dd {
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
 @media screen and (max-width: 1250px){
   #search-box #search-button {
   padding: 0 2rem;
