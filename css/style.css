@@ -1499,13 +1499,20 @@ flex: inherit;
 }
 .header-support-icon {
 display: inline-flex;
+line-height: initial;
 }
 
-.header-icon a,.thunk-icon .cart-icon a{
-font-size:1.5rem;
+.header-icon a{
+font-size:2rem;
 padding-right:1.5rem;
 position: relative;
-color:#000;
+color:#111;
+display: inline-flex;
+}
+
+.thunk-icon .taiowc-icon .th-icon,
+.thunk-icon .taiowcp-icon .th-icon{
+font-size: 2rem;
 }
 
 .thunk-icon .cart-contents .count-item {
@@ -1782,8 +1789,8 @@ text-align: left;
 }
 .woocommerce .thunk-product-content a.add_to_cart_button.ajax_add_to_cart::before,
 .woocommerce ul.products li.product .button::before{
-    content: "\f07a";
-    font-family: "FontAwesome";
+    font-family: th-icon;
+    content: '\e919';
     font-size: 1rem;
     left: 0;
     right: 0;
@@ -1923,8 +1930,8 @@ opacity:1;
 }
 .thunk-woo-product-list .thunk-product .yith-wcwl-wishlistexistsbrowse:before, 
 .thunk-woo-product-list .thunk-product .yith-wcwl-wishlistaddedbrowse:before {
-    content: "\f004";
-    font-family: 'fontawesome';
+    content: "\e909";
+    font-family: 'th-icon';
     margin: 0;
     font-size:1rem;
 }
@@ -1940,16 +1947,16 @@ opacity:1;
 .woocommerce a.compare.button::before, 
 .woocommerce ul.products li .product-button-hover .add_to_wishlist::before,
 .woocommerce ul.products li .thunk-compare .compare-button a::before {
-    font-family: "FontAwesome";
+    font-family: "th-icon";
     position: absolute;
     left: 0;
     right: 0;
-    font-size:1rem;
+    font-size:14px;
     margin: 0;
 }
 .thunk-woo-product-list .thunk-compare .compare-button a:before,
 .woocommerce ul.products li .thunk-compare .compare-button a:before{
-    content: "\f021";
+   content: "\e917";
 }
 .thunk-woo-product-list .thunk-wishlist{
 margin-bottom:0.5rem;
@@ -1967,7 +1974,6 @@ margin-bottom:0.5rem;
 /******************************/
 .header-support-icon .menu-toggle{
 display:block!important;
-    margin-top: 3px;
 }
 .header-support-icon .menu-toggle .menu-btn{
     width:35px;
@@ -1980,7 +1986,7 @@ border:none;
 }
 .header-support-icon .menu-toggle .icon-bar{
 width: 30px;
-    height: 2px;
+    height: 1px;
     margin: 4px;
     background: #000;
 }
@@ -4599,9 +4605,9 @@ clear: initial;
 .summary .yith-wcwl-add-to-wishlist .add_to_wishlist::before, 
 .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a::before, 
 .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a::before {
-    content: "\f08a";
-    font-family:fontawesome;
-    font-size: 13px;
+    content: "\e90a";
+    font-family:th-icon;
+    font-size: 18px;
 }
 .thunk-single-product-summary-wrap .yith-wcwl-add-button .yith-wcwl-icon{
 display:none;
@@ -4629,7 +4635,29 @@ box-shadow: none !important;
 color:#111;
 content: "\f004";
 }
-
+.woocommerce .entry-summary a.th-product-compare-btn {
+    border: 1px solid;
+    border-radius: 0;
+    color:#9c9c9c;
+    display: inline-block;
+    font-size: 0;
+    height: 45px;
+    line-height: 45px;
+    width: 45px;
+    background: 0 0;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: 400;
+    min-width: auto;
+}
+.woocommerce .entry-summary .th-product-compare-btn.btn_type.th-added-compare, .woocommerce .entry-summary a.th-product-compare-btn:before {
+    content: "\e917";
+    font-family: th-icon!important;
+    display: block;
+    color: #9c9c9c;
+    font-size: 16px;
+    padding: 0;
+}
 .woocommerce table.shop_table tbody.wishlist-items-wrapper img{
 max-width:60px;
 }
@@ -6280,8 +6308,8 @@ margin-bottom:0.5rem;
 }
 
 .product-summary .yith-wcwl-add-to-wishlist .add_to_wishlist::before, .product-summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a::before, .product-summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a::before {
-    content: "\f08a";
-    font-family: fontawesome;
+    content: "\e909";
+    font-family: th-icon;
    font-size: 0.9rem;
 }
 
@@ -6302,8 +6330,8 @@ margin-bottom:0.5rem;
 }
 
 .thunk-single-product-slide .product-summary a.compare.button:before {
-    content: "\f021";
-    font-family: FontAwesome;
+    content:"\e917";
+    font-family: th-icon;
     display: block;
     color: #9c9c9c;
     font-size: 0.9rem;
@@ -6353,8 +6381,8 @@ background-color: #111;
 -webkit-border-radius: 1px;
 -moz-border-radius: 1px;
 border-radius: 1px;
-margin: 3px;
-height: 2px;
+margin: 4px;
+height: 1px;
 }
 .off-canvas-button span.cnv-top{
 width: 22px;
@@ -7056,7 +7084,9 @@ padding-top: 8px;
 display: block;
 }
 
-
+.sold-individually .m-shop-quantity {
+    display: none;
+}
 
 @media screen and (max-width: 1250px){
   #search-box #search-button {
@@ -7356,7 +7386,7 @@ background:none!important;
 }
 }
 @media screen and (max-width: 767px){
-.main-header .taiowc-icon svg, .main-header .taiowc-icon img {
+.main-header .taiowc-icon img,.main-header .taiowcp-icon img {
     width: 1.7rem;
 }
   .main-header-col2,.right-side .main-header-col2,.left-side .main-header-col2{
@@ -7372,7 +7402,7 @@ flex: auto;
 header{
   height: auto;
 }
-.main-header .thaps-search-box {
+.main-header .thaps-search-box ,.main-header .tapsp-search-box {
     max-width: 100%;
 }
 .main-header-bar{
@@ -7385,8 +7415,12 @@ header{
     padding-top:10rem;
 }
 .header-icon a, .thunk-icon .cart-icon a {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding-right: 1rem;
+  }
+
+  .thunk-icon .taiowc-icon .th-icon, .thunk-icon .taiowcp-icon .th-icon{
+      font-size: 1.6rem;
   }
   .header-icon{
     margin-left:1.2rem;
@@ -7399,7 +7433,6 @@ header{
   }
 .header-support-icon .menu-toggle .icon-bar {
     
-    height: 2px;
     margin:3px;
   }
 
@@ -7532,7 +7565,10 @@ margin-right:0.5rem;
     width: 100px;
 }
 
-.summary .yith-wcwl-add-button a, .summary .yith-wcwl-wishlistaddedbrowse a, .summary .yith-wcwl-wishlistexistsbrowse a,.woocommerce .entry-summary a.compare.button{
+.summary .yith-wcwl-add-button a, .summary .yith-wcwl-wishlistaddedbrowse a, 
+.summary .yith-wcwl-wishlistexistsbrowse a,
+.woocommerce .entry-summary a.compare.button,
+.woocommerce .entry-summary a.th-product-compare-btn{
  height: 2rem;
     line-height: 2rem;
     width: 2rem;
@@ -7579,8 +7615,13 @@ aside.m-shop-sidebar{
     left: 18rem;
 }
 
-.taiowc-content .taiowc-total{
+.taiowc-content .taiowc-total,.taiowcp-content .taiowcp-total{
   display: none;
+}
+
+.summary .yith-wcwl-add-to-wishlist .add_to_wishlist::before, .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a::before, .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a::before,.woocommerce .entry-summary .th-product-compare-btn.btn_type.th-added-compare, .woocommerce .entry-summary a.th-product-compare-btn:before{
+
+  font-size: 13px;
 }
 
 }

@@ -277,9 +277,10 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 		
 		   }
 
-			if(class_exists('Taiowc_Pro')){
+			if(class_exists('Taiowc_Pro') || class_exists('Taiowcp')){
                 $classes[] ='taiowc-fly-cart';
 			}
+
 			return $classes;
 		}
 		/**
@@ -770,15 +771,12 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
            }
 
         }
-
-
-
 					/**********************/
 					/** wishlist **/
 					/**********************/
 					public function m_shop_whish_list($pid=''){
 					        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) ){
-					        echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist icon="fa fa-heart" label='.__('wishlist','m-shop').'
+					        echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist icon="th-icon th-icon-favorite" label='.__('wishlist','m-shop').'
 					         already_in_wishslist_text='.__('Already','m-shop').' browse_wishlist_text='.__('Added','m-shop').']' ).'</span></div>';
 					       }elseif( ( class_exists( 'WPCleverWoosw' ))){
         		echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[woosw id='.$pid.']').'</span></div>';
