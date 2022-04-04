@@ -40,7 +40,7 @@ $m_shop_style.=".thunk-woo-product-list .thunk-product-wrap .opn-quick-view-text
 .woocommerce ul.products li.product .star-rating a:before,
 .widget.woocommerce .product_list_widget .star-rating,
 .widget.woocommerce .product_list_widget .star-rating:before,
-.woocommerce .star-rating,header #open-cart .cart-close-btn:hover,.header-icon a:hover {color:{$m_shop_theme_clr};}
+.woocommerce .star-rating,header #open-cart .cart-close-btn:hover,.header-icon a:hover,.woocommerce .entry-summary a.th-product-compare-btn.th-added-compare,.woocommerce .entry-summary a.th-product-compare-btn.th-added-compare:before,.thunk-icon .taiowc-icon .th-icon:hover,.taiowc .thunk-icon .taiowc-content:hover,.taiowcp .thunk-icon .taiowcp-content:hover,.thunk-compare .compare-button a.compare.button.th-added-compare{color:{$m_shop_theme_clr};}
 
 .open-cart p.buttons a:hover,.woocommerce .woocommerce-message .button,.thunk-slide .owl-nav button.owl-prev:hover, .thunk-slide .owl-nav button.owl-next:hover,.woocommerce #respond input#submit, #comments .submit,button, .button, input[type='button'], input[type='reset'], input[type='submit'],.woocommerce #content div.product div.summary .prev_next_buttons a:hover,.woocommerce.widget_shopping_cart .buttons a,.product_cat_view a:hover{border-color:{$m_shop_theme_clr};}
 .loader {

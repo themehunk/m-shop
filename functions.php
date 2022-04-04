@@ -353,6 +353,9 @@ function m_shop_scripts(){
 	// enqueue css
 
 	wp_enqueue_style( 'font-awesome', M_SHOP_THEME_URI . '/third-party/fonts/font-awesome/css/font-awesome.css', '', M_SHOP_THEME_VERSION );
+
+	wp_enqueue_style( 'th-icon', M_SHOP_THEME_URI . '/third-party/fonts/th-icon/style.css', '', M_SHOP_THEME_VERSION );
+
 	wp_enqueue_style( 'animate', M_SHOP_THEME_URI . '/css/animate.css','',M_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'owl.carousel-css', M_SHOP_THEME_URI . '/css/owl.carousel.css','',M_SHOP_THEME_VERSION);
 	

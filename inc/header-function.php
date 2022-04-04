@@ -133,34 +133,34 @@ function m_shop_header_icon(){
 <?php 
 if(get_theme_mod('m_shop_account_mobile_disable')==true){
   if (wp_is_mobile()!== true):
-m_shop_account();
+      m_shop_account();
 endif;
 }elseif(get_theme_mod('m_shop_account_mobile_disable')==false){
-  m_shop_account();
+      m_shop_account();
 }
 
 if(get_theme_mod('m_shop_whislist_mobile_disable')==true){
   if (wp_is_mobile()!== true):
 if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
  <a class="whishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
+        <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
       <?php }
       //WPC WISHLIST 
      if( class_exists( 'WPCleverWoosw' )){ ?>
       <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
+        <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
    <?php  } 
 
    endif; }elseif(get_theme_mod('m_shop_whislist_mobile_disable')==false){
     if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
  <a class="whishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
+        <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
       <?php } 
 
       //WPC WISHLIST 
      if( class_exists( 'WPCleverWoosw' )){ ?>
       <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
+        <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
    <?php  } 
 
    } ?>
@@ -298,7 +298,11 @@ function m_shop_th_advance_product_search(){
 
                 echo do_shortcode('[th-aps]');
 
-              } elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
+              }elseif ( shortcode_exists('tapsp') ){
+
+                echo do_shortcode('[tapsp]');
+
+              }elseif ( !shortcode_exists('th-aps') && !shortcode_exists('tapsp') && is_user_logged_in()) {
 
                 $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
 
@@ -330,7 +334,11 @@ function m_shop_th_cart(){
 
                 echo do_shortcode('[taiowc]');
 
-              } elseif ( !shortcode_exists('taiowc') && is_user_logged_in()) {
+              }elseif ( shortcode_exists('taiowcp') ){
+
+                echo do_shortcode('[taiowcp]');
+
+              } elseif ( !shortcode_exists('taiowc') && !shortcode_exists('taiowcp') && is_user_logged_in()) {
 
                 $url = admin_url('themes.php?page=thunk_started&th-tab=recommended-plugin');
 
