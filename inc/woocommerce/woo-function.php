@@ -142,3 +142,5 @@ add_filter( 'filter_wooscp_button_archive', function() {
 
 //for shop page
 remove_action('woocommerce_init','th_compare_add_action_shop_list');
+//To disable th compare Pro button 
+remove_action('woocommerce_init', 'tpcp_add_action_shop_list');
