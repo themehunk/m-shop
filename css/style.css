@@ -5685,7 +5685,7 @@ border-radius:5px;
 }
 #move-to-top{
     right: 30px;
-    bottom: 30px;
+    bottom: 151px;
 }
 #move-to-top:not(.filling){
     opacity: 0;
@@ -7187,6 +7187,7 @@ left:0!important;
 @media screen and (max-width: 980px){
 .thunk-highlight-col{
 width:50%;
+margin-bottom: 9px;
 }
 .thunk-highlight-col:nth-child(2n+2){
 border:none;
@@ -7407,6 +7408,7 @@ background:none!important;
   .main-header-col2,.right-side .main-header-col2,.left-side .main-header-col2{
 order:3;
 flex: auto;
+width: 100%;
 }
 .main-header-col3{
 order:2;

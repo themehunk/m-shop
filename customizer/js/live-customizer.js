@@ -410,7 +410,7 @@ wp.customize(
                 var settings = {
                     cssProperty: 'padding-top',
                     propertyUnit: 'rem',
-                    styleClass: ''
+                    styleClass: 'm_shop_ribbon_top_padding'
                 };
 
                 var arraySizes = {
@@ -429,7 +429,7 @@ wp.customize(
                 var settings = {
                     cssProperty: 'padding-bottom',
                     propertyUnit: 'rem',
-                    styleClass: ''
+                    styleClass: 'm_shop_ribbon_btm_padding'
                 };
 
                 var arraySizes = {
