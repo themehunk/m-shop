@@ -4650,12 +4650,13 @@ content: "\f004";
     font-weight: 400;
     min-width: auto;
 }
-.woocommerce .entry-summary .th-product-compare-btn.btn_type.th-added-compare, .woocommerce .entry-summary a.th-product-compare-btn:before {
+.woocommerce .entry-summary .th-product-compare-btn.btn_type.th-added-compare, .woocommerce .entry-summary a.th-product-compare-btn:before,
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before {
     content: "\e917";
     font-family: th-icon!important;
     display: block;
     color: #9c9c9c;
-    font-size: 16px;
+    font-size: 0;
     padding: 0;
 }
 .woocommerce table.shop_table tbody.wishlist-items-wrapper img{
@@ -4710,8 +4711,8 @@ border: 1px solid;
   line-height: 45px;
 }
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type:before{
-  content: "\f021";
-    font-family: FontAwesome;
+  content: "\e917";
+    font-family: th-icon!important;
     display: block;
     color: #9c9c9c;
     font-size: 1rem;
@@ -7585,7 +7586,8 @@ margin-right:0.5rem;
 .summary .yith-wcwl-add-button a, .summary .yith-wcwl-wishlistaddedbrowse a, 
 .summary .yith-wcwl-wishlistexistsbrowse a,
 .woocommerce .entry-summary a.compare.button,
-.woocommerce .entry-summary a.th-product-compare-btn{
+.woocommerce .entry-summary a.th-product-compare-btn,
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
  height: 2rem;
     line-height: 2rem;
     width: 2rem;
@@ -7636,7 +7638,8 @@ aside.m-shop-sidebar{
   display: none;
 }
 
-.summary .yith-wcwl-add-to-wishlist .add_to_wishlist::before, .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a::before, .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a::before,.woocommerce .entry-summary .th-product-compare-btn.btn_type.th-added-compare, .woocommerce .entry-summary a.th-product-compare-btn:before{
+.summary .yith-wcwl-add-to-wishlist .add_to_wishlist::before, .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a::before, .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a::before,.woocommerce .entry-summary .th-product-compare-btn.btn_type.th-added-compare, .woocommerce .entry-summary a.th-product-compare-btn:before,
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before{
 
   font-size: 13px;
 }
