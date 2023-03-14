@@ -29,6 +29,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Ulimited Blocks Added.
 * Tags Added.
 * Theme made compatible with Block Editor.
+* Editor.css Added.
 
 = 1.2.6 =
 * Ribbon section padding issue resolved.
@@ -139,6 +140,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Ulimited Blocks Added.
 * Tags Added.
 * Theme made compatible with Block Editor.
+* Editor.css Added.
 
 == Resources ==
  

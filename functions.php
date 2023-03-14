@@ -65,8 +65,14 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
 
         // Enqueue editor styles.
         add_editor_style( 'style-editor.css' );
+
+		add_editor_style( 'editor.css' );
+
         // Add support for responsive embedded content.
         add_theme_support( 'responsive-embeds' );
+
+		add_theme_support( 'custom-spacing' );
+		
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
