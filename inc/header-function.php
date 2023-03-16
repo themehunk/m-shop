@@ -294,13 +294,14 @@ function m_shop_sidebar_panel(){
 //*******************************
 function m_shop_th_advance_product_search(){
 
-              if ( shortcode_exists('th-aps') ){
-
-                echo do_shortcode('[th-aps]');
-
-              }elseif ( shortcode_exists('tapsp') ){
+              if ( shortcode_exists('tapsp') ){
 
                 echo do_shortcode('[tapsp]');
+
+              }
+              elseif ( shortcode_exists('th-aps') ){
+
+                echo do_shortcode('[th-aps]');
 
               }elseif ( !shortcode_exists('th-aps') && !shortcode_exists('tapsp') && is_user_logged_in()) {
 

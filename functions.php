@@ -65,13 +65,16 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
 
         // Enqueue editor styles.
         add_editor_style( 'style-editor.css' );
+
+		add_editor_style( 'editor.css' );
+
         // Add support for responsive embedded content.
         add_theme_support( 'responsive-embeds' );
+
+		add_theme_support( 'custom-spacing' );
+		
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-
-		// Remove theme support for widget block editor
-		remove_theme_support( 'widgets-block-editor' );
 
 		/**
 		 * Add support for core custom logo.
@@ -143,7 +146,12 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'm-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
-            ), 
+            ),
+            'unlimited-blocks' => array(
+                'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'm-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
+            ),  
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'm-shop' ),
                  'img' => 'icon-128x128.png',
