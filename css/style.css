@@ -121,25 +121,20 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
-
 audio:not([controls]) {
   display: none;
   height: 0;
 }
-
 [hidden],
 template {
   display: none;
 }
-
 a {
   background-color: transparent;
 }
-
 a:active {
   outline: 0;
 }
-
 a,
 a:visited,
 a:hover,
@@ -152,25 +147,20 @@ text-decoration:underline;
 abbr[title] {
   border-bottom: 1px dotted;
 }
-
 b,
 strong {
   font-weight: bold;
 }
-
 dfn {
   font-style: italic;
 }
-
 mark {
   background: #ff0;
   color: #000;
 }
-
 small {
   font-size: 80%;
 }
-
 sub,
 sup {
   font-size: 75%;
@@ -178,7 +168,6 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sup {
   top: -0.5em;
 }
@@ -214,7 +203,6 @@ pre,
 samp {
   font-size: 1em;
 }
-
 button,
 input,
 optgroup,
@@ -224,16 +212,13 @@ textarea {
   font: inherit;
   margin: 0;
 }
-
 button {
   overflow: visible;
 }
-
 button,
 select {
   text-transform: none;
 }
-
 button,
 html input[type="button"],
 input[type="reset"],
@@ -241,38 +226,31 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
-
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
-
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-
 input {
   line-height: normal;
 }
-
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
-
 .search .search-submit,
 #comments .submit {
   padding: 10px 15px;
@@ -303,12 +281,10 @@ fieldset {
   margin: 0 0px;
   padding: 0.35em 0.625em 0.75em;
 }
-
 legend {
   border: 0;
   padding: 0;
 }
-
 fieldset legend {
   margin-bottom: 1.5em;
   padding: 0 0.5em;
@@ -1119,7 +1095,7 @@ header .mobile-nav-bar.sider.right {
 }
 .sidebar-nav-tabs ul li a {
     display: block;
-    padding: 1rem 1.25rem;
+    padding: 0.9rem 1.12rem;
     font-size: 1rem;
     color:#666;
     font-family: "JosefinSans-Bold", sans-serif;
@@ -7436,9 +7412,8 @@ header{
     font-size: 1.6rem;
     padding-right: 1rem;
   }
-
   .thunk-icon .taiowc-icon .th-icon, .thunk-icon .taiowcp-icon .th-icon{
-      font-size: 1.6rem;
+      font-size: 1.8rem;
   }
   .header-icon{
     margin-left:1.2rem;
@@ -7449,16 +7424,13 @@ header{
 .thunk-icon .cart-contents .cart-total {
     display:none;
   }
-.header-support-icon .menu-toggle .icon-bar {
-    
+.header-support-icon .menu-toggle .icon-bar {   
     margin:3px;
   }
-
   .main-header-col1 {
     margin-right: 0;
     width: 50%;
   }
- 
   .primary-content-wrap {
    padding: 0;
   }
@@ -7478,14 +7450,12 @@ width:49%;
 .thunk-blog-wrap article.post-item:nth-child(2n+2){
 margin-right:0;
 }
-
 .thnk-col-4 .widget-footer-col1, 
 .thnk-col-4 .widget-footer-col2, 
 .thnk-col-4 .widget-footer-col3, 
 .thnk-col-4 .widget-footer-col4{
   width:50%;
 }
-
 .woocommerce ul.products[class*=columns-] li.product, 
 .woocommerce-page ul.products[class*=columns-] li.product{
    width: 48%;
@@ -7504,7 +7474,6 @@ margin-right:0;
     float: left;
     width: 100%!important;
 }
-
 /*checkout*/
 .woocommerce-checkout>.col2-set {
     float: left;

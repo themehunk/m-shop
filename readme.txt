@@ -1,10 +1,10 @@
 == Theme: M Shop ==
 Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
-Requires at least: WordPress 4.7
-Requires PHP: 5.0
-Tested up to: 6.1
-Stable tag: 1.2.7
+Requires at least: WordPress 5.5
+Requires PHP: 5.6
+Tested up to: 6.2
+Stable tag: 1.2.8
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -23,6 +23,11 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
+= 1.2.8 =
+Update : Style Improved.
+Update : text domain issue resolved.
+
 = 1.2.7 =
 * Theme Review.
 * Style Modification.
@@ -134,13 +139,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Initial release
 
 == Upgrade Notice ==
-= 1.2.7 =
-* Theme Review.
-* Style Modification.
-* Ulimited Blocks Added.
-* Tags Added.
-* Theme made compatible with Block Editor.
-* Editor.css Added.
+= 1.2.8 =
+Update : Style Improved.
+Update : text domain issue resolved.
 
 == Resources ==
  
