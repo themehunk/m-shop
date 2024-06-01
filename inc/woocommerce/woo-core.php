@@ -638,11 +638,31 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 		} 
 
 		function m_shop_display_quantity_minus(){
+			global $product;
+			 // Get the product ID
+    $product_id = $product->get_id();
+
+    // Check if stock management is enabled
+    $manage_stock = get_post_meta( $product_id, '_manage_stock', true );
+
+    // Check if the product has stock management and the quantity is greater than 1
+    if ( ( $manage_stock === 'no' ) || ( $manage_stock === 'yes' && $product->get_stock_quantity() > 1 ) ) {
 		    echo '<div class="m-shop-quantity"><button type="button" class="minus" >-</button>';
+		}
 		}
 
 	     function m_shop_display_quantity_plus(){
+	     	global $product;
+	     	 // Get the product ID
+    $product_id = $product->get_id();
+
+    // Check if stock management is enabled
+    $manage_stock = get_post_meta( $product_id, '_manage_stock', true );
+
+    // Check if the product has stock management and the quantity is greater than 1
+    if ( ( $manage_stock === 'no' ) || ( $manage_stock === 'yes' && $product->get_stock_quantity() > 1 ) ) {
 		    echo '<button type="button" class="plus" >+</button></div>';
+		}
 		}
 
 

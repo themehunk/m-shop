@@ -4,7 +4,7 @@ Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog,
 Requires at least: WordPress 5.5
 Requires PHP: 5.6
 Tested up to: 6.2
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -24,9 +24,12 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.2.9 =
+* Update: Remove quantity button when only 1 product remaining in stock;
+
 = 1.2.8 =
-Update : Style Improved.
-Update : text domain issue resolved.
+* Update : Style Improved.
+* Update : text domain issue resolved.
 
 = 1.2.7 =
 * Theme Review.
@@ -139,9 +142,8 @@ Update : text domain issue resolved.
 * Initial release
 
 == Upgrade Notice ==
-= 1.2.8 =
-Update : Style Improved.
-Update : text domain issue resolved.
+= 1.2.9 =
+* Update: Remove quantity button when only 1 product remaining in stock;
 
 == Resources ==
  

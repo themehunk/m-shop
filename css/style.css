@@ -5358,6 +5358,7 @@ border-radius:3px 0px 0px 3px;
     display: block;
     font-weight: 300;
         color: #fff;
+        text-decoration: none;
 }
 .woocommerce-MyAccount-navigation ul li:last-child {
 border:0;
@@ -7080,6 +7081,23 @@ display: block;
     display: flex;
     padding: 0;
 }
+input[type='submit'].dokan-btn-theme, 
+a.dokan-btn-theme, .dokan-btn-theme{
+  text-decoration: none;
+}
+.store-data-container .store-data{
+  margin-top: 21px;
+}
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li.no-banner-img .store-content .store-data h2 a{
+  font-size: 15px;
+}
+.thunk-single-product-slide-section .th-product-compare-btn-wrap{
+  display: none;
+}
+.thunk-single-product-slide-section .th-product-compare-btn,
+.thunk-single-product-slide-section .thunk-compare{
+  margin: 0!important;
+}
 @media screen and (max-width: 1250px){
   #search-box #search-button {
   padding: 0 2rem;
@@ -7611,6 +7629,9 @@ aside.m-shop-sidebar{
 .woocommerce .entry-summary a.th-product-compare-btn.btn_type:before{
 
   font-size: 13px;
+}
+.dokan-store-products-filter-area .orderby-search{
+  margin-top: 20px;
 }
 
 }
