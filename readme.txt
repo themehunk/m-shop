@@ -25,11 +25,12 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 = 1.2.9 =
-Update : competible with wordpress 6.6 .
+* Update: Remove quantity button when only 1 product remaining in stock;
+* Update : competible with wordpress 6.6 .
 
 = 1.2.8 =
-Update : Style Improved.
-Update : text domain issue resolved.
+* Update : Style Improved.
+* Update : text domain issue resolved.
 
 = 1.2.7 =
 * Theme Review.
@@ -142,9 +143,8 @@ Update : text domain issue resolved.
 * Initial release
 
 == Upgrade Notice ==
-= 1.2.8 =
-Update : Style Improved.
-Update : text domain issue resolved.
+= 1.2.9 =
+* Update: Remove quantity button when only 1 product remaining in stock;
 
 == Resources ==
  
