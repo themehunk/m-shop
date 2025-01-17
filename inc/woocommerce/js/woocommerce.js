@@ -308,6 +308,7 @@
                                       data: {
                                         action :'m_shop_cat_filter_ajax',
                                         'data_cat_slug':data_term_id,
+                                        'nonce':mshop.mshopnonce,
                                        },
                                 dataType: 'html'
                               }).done( function( response ){
@@ -622,6 +623,7 @@
                                       data: {
                                         action :'m_shop_cat_filter_ajax',
                                         'data_cat_slug':data_term_id,
+                                        'nonce':mshop.mshopnonce,
                                        },
                                 dataType: 'html'
                               }).done( function( response ){

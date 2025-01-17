@@ -23,6 +23,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.3.1 =
+* Fix: Security issue fixed.
+
 = 1.3.0 =
 * New: New theme.json version 3 added.
 
