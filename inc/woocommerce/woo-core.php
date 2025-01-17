@@ -369,6 +369,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
 				//category slider coloum
 				'm_shop_cat_item_no' => get_theme_mod('m_shop_cat_item_no','10'),
 				'm_shop_rtl' => (bool)get_theme_mod('m_shop_rtl'),
+				'mshopnonce' => wp_create_nonce( 'mshop_nonce' ),	
 
 	
 			);
