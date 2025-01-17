@@ -117,6 +117,11 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
             ),
+             'vayu-blocks' => array(
+				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'm-shop' ),
+				'img' => 'icon-128x128.png',
+				'active_filename' => 'vayu-blocks/vayu-blocks.php',
+				),
             'th-advance-product-search' => array(
             'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
             'img' => 'icon-128x128.gif',
@@ -132,45 +137,21 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                    'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
-            'th-variation-swatches' => array(
-                'name' => esc_html__( 'TH Variation Swatches', 'm-shop' ),
-                 'img' => 'icon-128x128.gif',
-                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
-            ),
-            'vayu-blocks' => array(
-				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'm-shop' ),
-				'img' => 'icon-128x128.png',
-				'active_filename' => 'vayu-blocks/vayu-blocks.php',
-				),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'm-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
+            ),
+            'th-variation-swatches' => array(
+                'name' => esc_html__( 'TH Variation Swatches', 'm-shop' ),
+                 'img' => 'icon-128x128.gif',
+                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
             ),
             'wp-popup-builder' => array(
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'm-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
             ), 
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'm-shop' ),
-                  'img' => 'icon-128x128.gif',
-                'active_filename' => 'woocommerce/woocommerce.php',
-            ),
-
-            'yith-woocommerce-wishlist' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'm-shop' ),
-                  'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
-             ),
-            
-            'themehunk-megamenu-plus' => array(
-                'name' => esc_html__( 'ThemeHunk Megamenu – Menu builder', 'm-shop' ),
-                'img' => 'icon-128x128.png',
-                'active_filename' => 'themehunk-megamenu-plus/themehunk-megamenu.php',
-            ), 
-            
-
         ) );
 
         // Import Data Content plugins
