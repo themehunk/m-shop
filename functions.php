@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'm_shop_setup' ) ) :
-define( 'M_SHOP_THEME_VERSION','1.0.0');
+define( 'M_SHOP_THEME_VERSION','1.3.1');
 define( 'M_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'M_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
@@ -124,12 +124,12 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
             ),
             'th-all-in-one-woo-cart' => array(
                  'name' => esc_html__( 'TH All In One Woo Cart', 'm-shop' ),
-                  'img' => 'icon-128x128.png',
+                   'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
              ),
             'th-product-compare' => array(
                  'name' => esc_html__( 'Th Product Compare', 'm-shop' ),
-                  'img' => 'icon-128x128.png',
+                   'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
             'th-variation-swatches' => array(
@@ -137,6 +137,11 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                  'img' => 'icon-128x128.gif',
                 'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
             ),
+            'vayu-blocks' => array(
+				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'm-shop' ),
+				'img' => 'icon-128x128.png',
+				'active_filename' => 'vayu-blocks/vayu-blocks.php',
+				),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'm-shop' ),
                  'img' => 'icon-128x128.png',
@@ -146,15 +151,10 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'm-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
-            ),
-            'unlimited-blocks' => array(
-                'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'm-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
-            ),  
+            ), 
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'm-shop' ),
-                 'img' => 'icon-128x128.png',
+                  'img' => 'icon-128x128.gif',
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
 
@@ -180,30 +180,6 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
             ),
-
-            'one-click-demo-import' => array(
-                'name' => esc_html__( 'One Click Demo Import', 'm-shop' ),
-                'img' => 'icon-128x128.png',
-                'active_filename' => 'one-click-demo-import/one-click-demo-import.php',
-            ), 
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'm-shop' ),
-                'img' => 'icon-128x128.png',
-                'active_filename' => 'woocommerce/woocommerce.php',
-            ),
-            'th-advance-product-search' => array(
-            'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
-            'img' => 'icon-128x128.gif',
-            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
-            ),
-
-            'th-all-in-one-woo-cart' => array(
-                 'name' => esc_html__( 'TH All In One Woo Cart', 'm-shop' ),
-                  'img' => 'icon-128x128.png',
-                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
-             ),
-
-
         ));
 
 
