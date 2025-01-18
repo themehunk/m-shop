@@ -4668,7 +4668,8 @@ top:0em!important;
         border-radius: 3px;
 }
 /*compare style*/
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type,
+.summary .yith-wcwl-add-to-wishlist-button{
 border: 1px solid;
     border-radius: 0;
     color: #9c9c9c;
@@ -7098,6 +7099,71 @@ a.dokan-btn-theme, .dokan-btn-theme{
 .thunk-single-product-slide-section .thunk-compare{
   margin: 0!important;
 }
+/* New Wishlist 2025  */
+.summary .yith-wcwl-add-to-wishlist-button{
+  font-size: initial;
+}
+
+.summary .yith-wcwl-add-to-wishlist-button__label{
+  display: none;
+}
+.summary .yith-wcwl-add-to-wishlist-button:before{
+    content: "\e912";
+    font-family: th-icon;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.summary .yith-wcwl-add-to-wishlist-button--added:before{
+    content: "\e909";
+}
+.summary .yith-add-to-wishlist-button-block--single{
+    margin: 0;
+    float: left;
+}
+.theme-m-shop .yith-wcwl-add-to-wishlist-button svg{
+    display: none;
+}
+.theme-m-shop .yith-wcwl-add-to-wishlist-button:before{
+     content: "\e912";
+    font-family: th-icon;
+}
+.theme-m-shop .yith-wcwl-add-to-wishlist-button--added:before{
+   content: "\e909";
+}
+.theme-m-shop .yith-wcwl-add-to-wishlist-button--added .yith-wcwl-add-to-wishlist-button__label{
+    display: none;
+}
+.theme-m-shop .yith-wcwl-add-to-wishlist-button__label{
+  display: none;
+}
+.theme-m-shop .yith-add-to-wishlist-button-block{
+  margin: 0;
+}
+.thunk-wishlist-inner{
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+   padding: 0;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    border-radius: 100%;
+    border: medium none;
+    letter-spacing: initial;
+    color: #000;
+    background: #ecf1f5;
+    text-align: center;
+    font-weight: normal;
+}
+.thunk-wishlist-inner a{
+  font-size: inherit!important;
+}
 @media screen and (max-width: 1250px){
   #search-box #search-button {
   padding: 0 2rem;
@@ -7574,7 +7640,8 @@ margin-right:0.5rem;
 .summary .yith-wcwl-wishlistexistsbrowse a,
 .woocommerce .entry-summary a.compare.button,
 .woocommerce .entry-summary a.th-product-compare-btn,
-.woocommerce .entry-summary a.th-product-compare-btn.btn_type{
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type,
+.summary .yith-wcwl-add-to-wishlist-button{
  height: 2rem;
     line-height: 2rem;
     width: 2rem;
