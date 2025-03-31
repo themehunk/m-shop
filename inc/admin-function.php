@@ -20,6 +20,20 @@ function m_shop_custom_logo(){
    <?php  }
 }
 endif;
+
+// Get Alt text of an image by its url
+if (!function_exists('m_shop_get_image_alt_text')) {
+	function m_shop_get_image_alt_text($image_url) {
+		$attachment_id = attachment_url_to_postid($image_url); // Get Attachment ID
+		
+		if ($attachment_id) {
+			$alt_text = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); // Get ALT Text
+			return $alt_text ? $alt_text : 'No ALT text found';
+		}
+		
+		return 'Image not found';
+	}
+	}
 /*********************/
 // Menu 
 /*********************/
@@ -413,11 +427,12 @@ function m_shop_testimonials_content( $m_shop_testimonials_content_id, $default 
 
 					$text   = ! empty( $testimonials_item->text ) ? apply_filters( 'm_shop_translate_single_string', $testimonials_item->text, 'Testimonials section' ) : '';
 					$link   = ! empty( $testimonials_item->link ) ? apply_filters( 'm_shop_translate_single_string', $testimonials_item->link, 'Testimonials section' ) : '';
-					?>
+          $alt_text = m_shop_get_image_alt_text($image);   
+          ?>
 				<div class="th-testimonial-list">
 					<div class="th-testimonial-img-wrap">
                     <div class="th-testimonial-img">
-                    <img src="<?php echo esc_url($image); ?>"/>
+                    <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($alt_text); ?>" />
                     </div>
                     <div class="th-testimonial-cnt">
                     <h2 class="th-testimonial-name"><a href="<?php echo esc_url($link);?>"><?php echo esc_html($title); ?></a></h2>

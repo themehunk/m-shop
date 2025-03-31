@@ -83,10 +83,10 @@ if ( ! function_exists( 'm_shop_whishlist_url' ) ){
 /** My Account Menu **/
 function m_shop_account(){
  if ( is_user_logged_in() ){
-  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-user" aria-hidden="true"></i><span class="tooltiptext">'.__('Account','m-shop').'</span></a>';
+  $return = '<a class="account" aria-label="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-user" aria-hidden="true"></i><span class="tooltiptext">'.__('Account','m-shop').'</span></a>';
   } 
  else {
-  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-lock1" aria-hidden="true"></i><span class="tooltiptext">'.__('Register','m-shop').'</span></a>';
+  $return = '<a class="account" aria-label="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-lock1" aria-hidden="true"></i><span class="tooltiptext">'.__('Register','m-shop').'</span></a>';
   }
  echo $return;
  }
