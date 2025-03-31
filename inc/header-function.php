@@ -142,24 +142,24 @@ endif;
 if(get_theme_mod('m_shop_whislist_mobile_disable')==true){
   if (wp_is_mobile()!== true):
 if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
- <a class="whishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
+ <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
         <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
       <?php }
       //WPC WISHLIST 
      if( class_exists( 'WPCleverWoosw' )){ ?>
-      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
+      <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
         <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
    <?php  } 
 
    endif; }elseif(get_theme_mod('m_shop_whislist_mobile_disable')==false){
     if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
- <a class="whishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
+ <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
         <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
       <?php } 
 
       //WPC WISHLIST 
      if( class_exists( 'WPCleverWoosw' )){ ?>
-      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
+      <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
         <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
    <?php  } 
 
@@ -199,10 +199,10 @@ function mshop_mobile_navbar(){?>
     <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><i class="icon below fa fa-home" aria-hidden="true"></i></a></li>
     <?php 
     if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){ ?>
-    <li><a class="whishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+    <li><a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
     <?php } 
     if( class_exists( 'WPCleverWoosw' )){ ?>
-      <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+      <li><a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
   <?php  }
     ?>
     <li>
