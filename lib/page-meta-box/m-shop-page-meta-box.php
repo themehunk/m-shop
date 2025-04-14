@@ -17,36 +17,6 @@ if ( ! function_exists( 'm_shop_admin_scripts' ) ) :
 endif;
 add_action( 'admin_enqueue_scripts', 'm_shop_admin_scripts' );
 
-$prefix='m_shop_';
-
-$meta_boxes = array(
-      array(
-        'id' => 'open-meta-box',
-        'title' => esc_html__('Dynamic Sidebar','m-shop'),
-        'pages' => array('page','post','product'),// custom post type array('page','post', 'link')
-        'context' => 'side',
-        'priority' => 'low',
-        'fields' => array(
-            array(
-                'name' => esc_html__('Sidebar','m-shop'),
-                'id' => $prefix . 'sidebar_dyn',
-                'type' => 'select',
-                'std' => 'default',
-                'options' => array( 
-                    array("value" => 'default',"name" => esc_html__('Default Layout','m-shop')),
-                    array("value" => 'right-side',"name" => esc_html__('Right Sidebar','m-shop')),
-                    array("value" => 'left-side',"name" =>  esc_html__('Left Sidebar','m-shop')),
-                    
-                 )
-             ),
-              
-        )
-    )
-);
-foreach ($meta_boxes as $meta_box){
-    $my_box = new m_shop_thMetaDataClass($meta_box);
-}
-
 class m_shop_thMetaDataClass {
  
     protected $_meta_box;
@@ -150,3 +120,36 @@ class m_shop_thMetaDataClass {
         }
     }
 }
+
+function m_shop_register_meta_boxes() {
+$prefix='m_shop_';
+
+$meta_boxes = array(
+      array(
+        'id' => 'open-meta-box',
+        'title' => esc_html__('Dynamic Sidebar','m-shop'),
+        'pages' => array('page','post','product'),// custom post type array('page','post', 'link')
+        'context' => 'side',
+        'priority' => 'low',
+        'fields' => array(
+            array(
+                'name' => esc_html__('Sidebar','m-shop'),
+                'id' => $prefix . 'sidebar_dyn',
+                'type' => 'select',
+                'std' => 'default',
+                'options' => array( 
+                    array("value" => 'default',"name" => esc_html__('Default Layout','m-shop')),
+                    array("value" => 'right-side',"name" => esc_html__('Right Sidebar','m-shop')),
+                    array("value" => 'left-side',"name" =>  esc_html__('Left Sidebar','m-shop')),
+                    
+                 )
+             ),
+              
+        )
+    )
+);
+foreach ($meta_boxes as $meta_box){
+    $my_box = new m_shop_thMetaDataClass($meta_box);
+}
+}
+add_action( 'init', 'm_shop_register_meta_boxes' );

@@ -45,9 +45,20 @@ function tab_constant(){
     $tab_array = array();
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','m-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
-    'welcome'=>sprintf(esc_html__('Welcome To %1s Theme', 'm-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
-    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' theme is an eCommerce WordPress theme specially made for shopping websites.', 'm-shop' ),
-    'v'=> 'Version '.$theme_data->get( 'Version' )
+    'welcome' => sprintf(
+                  esc_html__( 'Welcome To %1$s Theme — version %2$s', 'm-shop' ),
+                  esc_html( $theme_data->get( 'Name' ) ),
+                  esc_html( $theme_data->get( 'Version' ) )
+              ),
+    'welcome_desc' => sprintf(
+    esc_html__( '%1$s theme is an eCommerce WordPress theme specially made for shopping websites.', 'm-shop' ),
+    esc_html( $theme_data->get( 'Name' ) )
+),
+'v' => sprintf(
+    esc_html__( 'Version %1$s', 'm-shop' ),
+    esc_html( $theme_data->get( 'Version' ) )
+)
+
     );
     return $tab_array;
 }
