@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'm_shop_setup' ) ) :
-define( 'M_SHOP_THEME_VERSION','1.3.2');
+define( 'M_SHOP_THEME_VERSION','1.3.3');
 define( 'M_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'M_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );

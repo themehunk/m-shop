@@ -66,14 +66,18 @@ class ThemeHunk_Child_Notify{
           	<h1>
         <?php
         /* translators: %1$s: theme name, %2$s theme version */
-        printf( esc_html__( 'Welcome to %1$s - Version %2$s', 'm-shop' ), esc_html( $my_theme->Name ), esc_html( $my_theme->Version ) );
+        printf( 
+			esc_html__( 'Welcome to %1$s - Version %2$s', 'm-shop' ), 
+			esc_html( $my_theme->Name ), 
+			esc_html( $my_theme->Version ) 
+		);
         ?>
       </h1>
 
         <p>
       <?php echo sprintf(__("Get Started with %s and Start customizing your website, also Install the Child theme if you want to edit the core code of the theme.",'m-shop'),esc_html( $my_theme->Name )); ?>
         </p>
-        <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class="button button-primary th-blue"><?php _e('Get Started with '.esc_html( $my_theme->Name ),'m-shop') ?></a>
+        <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class="button button-primary th-blue"><?php printf( esc_html__( 'Get Started with %s', 'm-shop' ), esc_html( $my_theme->get( 'Name' ) ) ); ?></a>
 
         <a href="<?php echo esc_url(admin_url('themes.php?page=thunk_started')); ?>" class=" button-secondary"><?php _e('Get Child Theme Now','m-shop') ?></a>
 
