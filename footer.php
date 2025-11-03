@@ -8,6 +8,7 @@
  * @since 1.0.0
  */ 
 ?>
+<?php do_action('m_shop_before_footer'); ?>
 <footer class="m-shop-footer">
          <?php 
           // top-footer 
@@ -29,6 +30,7 @@
         ?>
        
      </footer> <!-- end footer -->
+    <?php do_action('m_shop_after_footer'); ?>
  </div> <!-- end mshop-site -->
 <?php wp_footer(); ?>
 </body>

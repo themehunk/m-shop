@@ -73,10 +73,16 @@ $args = array();
 
 if ( ! function_exists( 'm_shop_whishlist_url' ) ){ 
           function m_shop_whishlist_url(){
+          $wishlist_page_id = '';
+        if (class_exists( 'THWL_Wishlist' )) {
+          $wishlist_page_id =  get_option( 'thwl_page_id' );
+        }
+        elseif( class_exists( 'YITH_WCWL' ) ){
           $wishlist_page_id =  get_option( 'yith_wcwl_wishlist_page_id' );
-          $wishlist_permalink = get_the_permalink( $wishlist_page_id );
-          return $wishlist_permalink ;
-          }
+        }
+    $wishlist_permalink = get_the_permalink($wishlist_page_id);
+    return $wishlist_permalink;
+        }
     }
 
  if ( ! function_exists( 'm_shop_account' ) ){ 
@@ -144,3 +150,9 @@ add_filter( 'filter_wooscp_button_archive', function() {
 remove_action('woocommerce_init','th_compare_add_action_shop_list');
 //To disable th compare Pro button 
 remove_action('woocommerce_init', 'tpcp_add_action_shop_list');
+
+// To disable Wishlist button for loop button at shop page
+remove_action( 'wp', 'thwl_hook_wishlist_loop_button_position');
+
+// To disable Wishlist button for loop button at single page
+// remove_action( 'wp', 'thwl_hook_wishlist_single_button_position');
