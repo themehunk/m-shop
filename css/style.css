@@ -7181,12 +7181,20 @@ a.dokan-btn-theme, .dokan-btn-theme{
     text-align: center;
     font-weight: normal;
 }
+.thunk-wishlist .thw-add-to-wishlist-button.no-style .thw-icon{
+  font-size: 16px;
+}
 .thunk-wishlist-inner a{
   font-size: inherit!important;
 }
 .wc-block-cart p,
 .wc-block-checkout p{
   font-size: 1.2em;
+}
+.wc-block-product a,
+.wc-block-cart-item__wrap a,
+.wc-block-components-button{
+  text-decoration: none!important;
 }
 @media screen and (max-width: 1250px){
   #search-box #search-button {

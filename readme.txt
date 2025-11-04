@@ -25,6 +25,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
  = 1.3.5 =
  * Update: Hooks added before & after of header and footer.
+  * Update: Woocommerce checkout page .woocommerce-checkout .thunk-content-wrap {
+    display: -webkit-flex;
+} 
 
  = 1.3.4 =
  * Update: $attachment_ids = $product->get_gallery_image_ids() critical error issue resolved; 
