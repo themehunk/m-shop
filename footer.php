@@ -9,28 +9,8 @@
  */ 
 ?>
 <?php do_action('m_shop_before_footer'); ?>
-<footer class="m-shop-footer">
-         <?php 
-          // top-footer 
-          do_action( 'm_shop_top_footer' ); 
-          // widget-footer
-		  do_action( 'm_shop_widget_footer' );
-		  // below-footer
-
-        if(has_action('m_shop_below_footer')){
-
-            do_action( 'm_shop_below_footer' ); 
-
-        }else{
-
-            do_action( 'm_shop_default_below_footer');
-
-        }
-
-        ?>
-       
-     </footer> <!-- end footer -->
-    <?php do_action('m_shop_after_footer'); ?>
+<?php do_action( 'm_shop_footer' ); ?>
+<?php do_action('m_shop_after_footer'); ?>
  </div> <!-- end mshop-site -->
 <?php wp_footer(); ?>
 </body>

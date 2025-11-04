@@ -8,12 +8,25 @@
  * @since       big store 1.0.0
  */
 /**************************************/
+// Wrapper of header markup
+/**************************************/
+if ( !function_exists('m_shop_full_header_markup') ) {
+function m_shop_full_header_markup() { ?>
+        <?php do_action( 'm_shop_main_header' ); ?>           
+<?php }
+add_action('m_shop_header', 'm_shop_full_header_markup');
+}
+/**************************************/
 //Main Header function
 /**************************************/
 if ( ! function_exists( 'm_shop_main_header_markup' ) ){	
 function m_shop_main_header_markup(){ 
 
 ?>
+<header class="m-shop-header">
+    <a class="skip-link screen-reader-text" href="#content">
+      <?php _e( 'Skip to content', 'm-shop' ); ?> 
+    </a>  
 <div class="main-header   <?php echo esc_attr(get_theme_mod('m_shop_canvas_alignment')); ?>">
 			<div class="container">
         <div class="desktop-main-header">
@@ -38,6 +51,7 @@ function m_shop_main_header_markup(){
       <!-- end main-header-bar -->
 			</div>
 		</div> 
+    </header> 
 <?php	}
 }
 add_action( 'm_shop_main_header', 'm_shop_main_header_markup' );
