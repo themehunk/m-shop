@@ -4627,7 +4627,7 @@ content: "\f004";
     min-width: auto;
 }
 .woocommerce .entry-summary a.th-product-compare-btn .icon{
-  font-size: 18px;
+  display: none;
 }
 .woocommerce .entry-summary a.th-product-compare-btn .text{
   display: none;
@@ -4638,7 +4638,6 @@ content: "\f004";
     font-family: th-icon!important;
     display: block;
     color: #9c9c9c;
-    font-size: 0;
     padding: 0;
 }
 .woocommerce table.shop_table tbody.wishlist-items-wrapper img{
