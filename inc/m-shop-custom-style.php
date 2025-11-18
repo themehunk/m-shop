@@ -74,20 +74,6 @@ $m_shop_style.="#move-to-top{background:{$m_shop_move_to_top_bg_clr};color:{$m_s
 $m_shop_style.= m_shop_responsive_slider_funct( 'm_shop_ribbon_top_padding', 'm_shop_ribbon_top_padding_responsive');
 $m_shop_style.= m_shop_responsive_slider_funct( 'm_shop_ribbon_btm_padding', 'm_shop_ribbon_btm_padding_responsive');
 
-//Hide yith if WPC SMART Icon 
-if( (class_exists( 'WPCleverWoosw' ))){
-$m_shop_style.=" .woocommerce .entry-summary .yith-wcwl-add-to-wishlist{
-  display:none;
-}
-";
-}
-if( (class_exists( 'WPCleverWooscp' ))){
-$m_shop_style.=" .woocommerce .entry-summary a.compare.button{
-  display:none;
-}
-";
-}
-
 // global page option
 $m_shop_link_clr       = esc_html(get_theme_mod('m_shop_link_clr'));
 $m_shop_link_hvr_clr   = esc_html(get_theme_mod('m_shop_link_hvr_clr'));

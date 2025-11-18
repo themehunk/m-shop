@@ -1,14 +1,3 @@
-@font-face {
-  font-family: 'th-icon';
-  src:  url('fonts/th-icon.eot?stlo25');
-  src:  url('fonts/th-icon.eot?stlo25#iefix') format('embedded-opentype'),
-    url('fonts/th-icon.ttf?stlo25') format('truetype'),
-    url('fonts/th-icon.woff?stlo25') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
 .th-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'th-icon' !important;

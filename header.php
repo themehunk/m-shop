@@ -27,12 +27,9 @@
 	 <?php wp_body_open();?>
 <?php do_action('m_shop_site_preloader'); ?>
 <div id="page" class="m-store-site  <?php echo esc_attr(m_shop_class_sidebar());?>">
-<header>
-		<a class="skip-link screen-reader-text" href="#content">
-			<?php _e( 'Skip to content', 'm-shop' ); ?>	
-		</a>	
-        <?php do_action( 'm_shop_main_header' ); ?>           
-</header> 
+<?php do_action('m_shop_before_header'); ?>
+<?php do_action('m_shop_header'); ?>
+<?php do_action('m_shop_after_header'); ?>
 <div class="header-pan-icon" >
 			<a href="#" class="pan-icon" ></a>
 

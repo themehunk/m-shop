@@ -8,12 +8,25 @@
  * @since       big store 1.0.0
  */
 /**************************************/
+// Wrapper of header markup
+/**************************************/
+if ( !function_exists('m_shop_full_header_markup') ) {
+function m_shop_full_header_markup() { ?>
+        <?php do_action( 'm_shop_main_header' ); ?>           
+<?php }
+add_action('m_shop_header', 'm_shop_full_header_markup');
+}
+/**************************************/
 //Main Header function
 /**************************************/
 if ( ! function_exists( 'm_shop_main_header_markup' ) ){	
 function m_shop_main_header_markup(){ 
 
 ?>
+<header class="m-shop-header">
+    <a class="skip-link screen-reader-text" href="#content">
+      <?php _e( 'Skip to content', 'm-shop' ); ?> 
+    </a>  
 <div class="main-header   <?php echo esc_attr(get_theme_mod('m_shop_canvas_alignment')); ?>">
 			<div class="container">
         <div class="desktop-main-header">
@@ -38,6 +51,7 @@ function m_shop_main_header_markup(){
       <!-- end main-header-bar -->
 			</div>
 		</div> 
+    </header> 
 <?php	}
 }
 add_action( 'm_shop_main_header', 'm_shop_main_header_markup' );
@@ -141,27 +155,17 @@ endif;
 
 if(get_theme_mod('m_shop_whislist_mobile_disable')==true){
   if (wp_is_mobile()!== true):
-if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
+if( class_exists( 'THWL_Wishlist' ) || class_exists( 'YITH_WCWL' )){?>
  <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
         <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
       <?php }
-      //WPC WISHLIST 
-     if( class_exists( 'WPCleverWoosw' )){ ?>
-      <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
-   <?php  } 
 
    endif; }elseif(get_theme_mod('m_shop_whislist_mobile_disable')==false){
-    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
+    if( class_exists( 'THWL_Wishlist' ) || class_exists( 'YITH_WCWL' ) ){?>
  <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>">
         <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
       <?php } 
 
-      //WPC WISHLIST 
-     if( class_exists( 'WPCleverWoosw' )){ ?>
-      <a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="th-icon th-icon-heartline" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','m-shop');?></span></a>
-   <?php  } 
 
    } ?>
 </div>
@@ -198,12 +202,9 @@ function mshop_mobile_navbar(){?>
     
     <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><i class="icon below fa fa-home" aria-hidden="true"></i></a></li>
     <?php 
-    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){ ?>
+    if( class_exists( 'THWL_Wishlist' ) || class_exists( 'YITH_WCWL' )){ ?>
     <li><a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( m_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
     <?php } 
-    if( class_exists( 'WPCleverWoosw' )){ ?>
-      <li><a class="whishlist" aria-label="wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-  <?php  }
     ?>
     <li>
             <a href="#" class="menu-btn" id="mob-menu-btn">
