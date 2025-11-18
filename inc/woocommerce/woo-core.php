@@ -843,9 +843,9 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
                     	 echo do_shortcode('[yith_wcwl_add_to_wishlist 
                     product_id="' . esc_attr($pid) . '" 
                     icon="th-icon th-icon-heart1" 
-                    label="' . esc_attr__('wishlist', 'th-shop-mania') . '" 
-                    already_in_wishslist_text="' . esc_attr__('Already', 'th-shop-mania') . '" 
-                    browse_wishlist_text="' . esc_attr__('Added', 'th-shop-mania') . '"
+                    label="' . esc_attr__('wishlist', 'm-shop') . '" 
+                    already_in_wishslist_text="' . esc_attr__('Already', 'm-shop') . '" 
+                    browse_wishlist_text="' . esc_attr__('Added', 'm-shop') . '"
                 ]'); 
                     }
                 ?>
