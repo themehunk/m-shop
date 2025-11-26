@@ -7195,6 +7195,9 @@ a.dokan-btn-theme, .dokan-btn-theme{
 .wc-block-components-button{
   text-decoration: none!important;
 }
+.theme-m-shop .thunk-product .yith-add-to-wishlist-button-block{
+  margin: 0!important;
+}
 @media screen and (max-width: 1250px){
   #search-box #search-button {
   padding: 0 2rem;
