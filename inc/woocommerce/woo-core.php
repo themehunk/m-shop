@@ -811,7 +811,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
       $product_id = $product->get_id();
     if(class_exists('th_product_compare') || class_exists('Tpcp_product_compare')){
     echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
-          <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
+          <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'">⇆</a>
           </div></span></div>';
 
            }

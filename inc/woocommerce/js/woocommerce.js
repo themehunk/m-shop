@@ -29,6 +29,15 @@
                     }
                 });
 
+                 // To append  ⇆ in products
+                 jQuery(function ($) {
+                    $('.page-template-frontpage .thunk-product-wrap .th-product-compare-btn').each(function () {
+                        if ($(this).text().trim() === '') {
+                            $(this).append('⇆');
+                        }
+                    });
+                });
+
            },
         listGridView: function (){
 
