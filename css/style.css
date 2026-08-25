@@ -916,7 +916,6 @@ aside.m-shop-sidebar {
     position: fixed;
     top: 82px;
     left: 0;
-    height: 100%;
     border-right: 1px solid #e3e9ef;
     width: 100%;
     max-width: 22rem;
@@ -7255,12 +7254,25 @@ main #content,footer,footer.m-shop-footer {
 .primary-content-area{
   padding-left:0;
  } 
-
+.sidebar-nav-bar .sider-inner{
+  height: 100vh;
+  overflow: scroll;
+}
+.sidebar-nav-widget{
+  overflow: scroll;
+}
+.sidebar-tab-wrap{
+  height: initial!important;
+}
+.sidebar-nav-tab-category ul,
+.sidebar-nav-tab-menu ul{
+  height: 372px;
+  overflow-y: scroll;
+}
 /*Side-Pan active*/
 .side-pan-active aside.m-shop-sidebar {
     left:0;
     top:0!important;
-        overflow-y: auto;
   }
 aside.m-shop-sidebar::-webkit-scrollbar{
     width:5px;
