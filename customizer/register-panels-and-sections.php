@@ -65,6 +65,13 @@ $m_shop_section_header_group = new  M_Shop_WP_Customize_Section( $wp_customize, 
   ));
 $wp_customize->add_section( $m_shop_section_header_group );
 
+$m_shop_section_mobile_menu = new  M_Shop_WP_Customize_Section( $wp_customize, 'm-shop-section-mobile-menu', array(
+    'title' =>  __( 'Mobile Menu Style', 'm-shop' ),
+    'panel' => 'm-shop-panel-layout',
+    'priority' => 2,
+  ));
+$wp_customize->add_section( $m_shop_section_mobile_menu );
+
 // above-header
 $m_shop_above_header = new  M_Shop_WP_Customize_Section( $wp_customize, 'm-shop-above-header', array(
     'title'    => __( 'Above Header', 'm-shop' ),

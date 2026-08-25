@@ -162,6 +162,13 @@
                         $('body').removeClass('mobile-menu-active');
                         
                         });
+
+                         //Menu close
+                        $('.menu-close-btn,.m-shop-menu li a span.m-shop-menu-link,.side-site-overlay').click(function(){
+                        $('body').removeClass('side-pan-active');
+                        
+                        }); 
+
                          $('.menu-close-btn,.m-shop-menu li a span.m-shop-menu-link').keypress(function(){
                         $('body').removeClass('mobile-menu-active');
                         

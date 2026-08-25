@@ -45,6 +45,7 @@ function m_shop_main_header_markup(){
           </div>
 					<div class="main-header-col3">
              <?php m_shop_main_header_optn();?>
+
           </div>
 				</div> 
       </div>
@@ -57,6 +58,8 @@ function m_shop_main_header_markup(){
 add_action( 'm_shop_main_header', 'm_shop_main_header_markup' );
 
 function m_shop_main_header_optn(){
+
+  $mobile_menu_style = get_theme_mod('m_shop_mobile_menu_style_type','side-icon');
           ?>
        <div class="header-support-wrap">  
         <div class="header-support-icon"> 
@@ -103,6 +106,16 @@ function m_shop_main_header_optn(){
                 </div> 
 
                 <?php } ?>
+
+            <?php if ( $mobile_menu_style == 'in-header' && ( is_customize_preview() || wp_is_mobile() ) ) { ?>
+  
+                <div class="ra-mobile-menu-icon">
+                <a href="#" class="pan-icon" tabindex="0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
+                </a>
+              </div>
+
+            <?php } ?>
 
               </div>  
 
@@ -240,8 +253,15 @@ add_action( 'm_shop_main_header', 'm_shop_menu_cat_panel' );
 //Front Side Panel
 //**************************//
 function m_shop_sidebar_panel(){
+   $mobile_menu_style = get_theme_mod('m_shop_mobile_menu_style_type','side-icon');
   ?>
       <div class="sidebar-nav-bar">
+
+        <?php
+ $mobile_menu_style = get_theme_mod('m_shop_mobile_menu_style_type','side-icon');
+ if ( $mobile_menu_style == 'in-header' && wp_is_mobile()  ) { ?>
+        <div class="menu-close"><a class="menu-close-btn" tabindex="0">Close</a></div>
+<?php } ?>
         <div class="sider-inner">
         
           <div class="sidebar-tab-wrap">

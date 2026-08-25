@@ -920,7 +920,7 @@ aside.m-shop-sidebar {
     border-right: 1px solid #e3e9ef;
     width: 100%;
     max-width: 22rem;
-   z-index:9;
+    z-index: 10000009;
     background-color: #fff;
     -webkit-transition: left .2s ease-in-out;
     -moz-transition: left .2s ease-in-out;
@@ -7769,4 +7769,15 @@ aside.m-shop-sidebar{
   margin-top: 20px;
 }
 
+}
+
+header .pan-icon:before {
+    display: none;
+}
+.ra-mobile-menu-icon{
+  margin-left: 9px;
+}
+
+body.side-pan-active{
+  overflow: hidden;
 }

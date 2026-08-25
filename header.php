@@ -30,10 +30,15 @@
 <?php do_action('m_shop_before_header'); ?>
 <?php do_action('m_shop_header'); ?>
 <?php do_action('m_shop_after_header'); ?>
+
+<?php
+ $mobile_menu_style = get_theme_mod('m_shop_mobile_menu_style_type','side-icon');
+ if ( $mobile_menu_style == 'side-icon' && ( is_customize_preview() || wp_is_mobile() ) ) { ?>
 <div class="header-pan-icon" >
 			<a href="#" class="pan-icon" ></a>
 
 	    </div>	
+<?php } ?>
 
 	    
 <!-- end header -->
