@@ -59,7 +59,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.2.9 =
 * Update: Remove quantity button when only 1 product remaining in stock;
-* Update : compatible with wordpress 6.6 .
+* Update : compatible with 6.6
 
 = 1.2.8 =
 * Update : Style Improved.
