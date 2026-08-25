@@ -811,7 +811,7 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
       $product_id = $product->get_id();
     if(class_exists('th_product_compare') || class_exists('Tpcp_product_compare')){
     echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
-          <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
+          <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'">⇆</a>
           </div></span></div>';
 
            }
@@ -843,9 +843,9 @@ if ( ! class_exists( 'M_Shop_Pro_Woocommerce_Ext' ) ) :
                     	 echo do_shortcode('[yith_wcwl_add_to_wishlist 
                     product_id="' . esc_attr($pid) . '" 
                     icon="th-icon th-icon-heart1" 
-                    label="' . esc_attr__('wishlist', 'th-shop-mania') . '" 
-                    already_in_wishslist_text="' . esc_attr__('Already', 'th-shop-mania') . '" 
-                    browse_wishlist_text="' . esc_attr__('Added', 'th-shop-mania') . '"
+                    label="' . esc_attr__('wishlist', 'm-shop') . '" 
+                    already_in_wishslist_text="' . esc_attr__('Already', 'm-shop') . '" 
+                    browse_wishlist_text="' . esc_attr__('Added', 'm-shop') . '"
                 ]'); 
                     }
                 ?>

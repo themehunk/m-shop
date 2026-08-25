@@ -52,3 +52,20 @@ $wp_customize->add_control(new M_Shop_Misc_Control( $wp_customize, 'm_shop_main_
         'description' => esc_html__( 'To know more go with this', 'm-shop' ),
         'priority'   =>100,
     )));
+
+
+$wp_customize->add_setting('m_shop_mobile_menu_style_type', array(
+        'default'        => 'side-icon',
+        'capability'     => 'edit_theme_options',
+        'sanitize_callback' => 'm_shop_sanitize_select',
+    ));
+$wp_customize->add_control( 'm_shop_mobile_menu_style_type', array(
+        'settings' => 'm_shop_mobile_menu_style_type',
+        'label'   => __('Choose Style','m-shop'),
+        'section' => 'm-shop-section-mobile-menu',
+        'type'    => 'select',
+        'choices'    => array(
+        'side-icon'       => __('Side Icon','m-shop'),
+        'in-header'       => __('In Header','m-shop'),   
+        ),
+    ));

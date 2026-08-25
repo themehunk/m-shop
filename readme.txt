@@ -2,8 +2,8 @@
 Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
 Requires PHP: 5.5
-Tested up to: 6.8
-Stable tag: 1.3.5
+Tested up to: 7.1
+Stable tag: 1.3.6
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -23,10 +23,15 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.3.6 =
+ * Update: Style improved and tested with WordPress 7.1.
+ * New: Mobile Menu style option added in layout section.
+
  = 1.3.5 =
  * Update: Hooks added before & after of header and footer.
-  * Update: Woocommerce checkout page .woocommerce-checkout .thunk-content-wrap {
+ * Update: Woocommerce checkout page .woocommerce-checkout .thunk-content-wrap {
     display: -webkit-flex;
+ * Update: Text Domain error resolved.
 } 
 
  = 1.3.4 =
@@ -171,8 +176,12 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Initial release
 
 == Upgrade Notice ==
- = 1.3.3 =
- * Update: Theme tested with WordPress 6.8.
+ = 1.3.5 =
+ * Update: Hooks added before & after of header and footer.
+ * Update: Woocommerce checkout page .woocommerce-checkout .thunk-content-wrap {
+    display: -webkit-flex;
+ * Update: Text Domain error resolved.
+} 
 
 == Resources ==
  
