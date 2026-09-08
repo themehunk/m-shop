@@ -924,6 +924,7 @@ aside.m-shop-sidebar {
     -webkit-transition: left .2s ease-in-out;
     -moz-transition: left .2s ease-in-out;
     transition: left .2s ease-in-out;
+    height: 100%;
 }
 .logged-in aside.m-shop-sidebar{
   top: 112px;
@@ -7227,6 +7228,9 @@ a.dokan-btn-theme, .dokan-btn-theme{
     content: "⇆"!important;
     font-size: 18px;
     line-height: 1;
+}
+.thunk-wishlist .thw-add-to-wishlist-button .thw-icon{
+  margin-right: 0;
 }
 @media screen and (max-width: 1250px){
   #search-box #search-button {

@@ -324,6 +324,14 @@
                                 if ( response ){
                                  $('.thunk-product-tab-section #thunk-cat-tab .tab-content').html('<div class="thunk-slide thunk-product-cat-slide owl-carousel"></div> <div class="thunk-loadContainer"> <div class="loader"></div></div>');
                                  $(".thunk-slide.thunk-product-cat-slide.owl-carousel").append(response);
+
+                                 $('.page-template-frontpage .thunk-product-wrap .th-product-compare-btn').each(function () {
+                                            if ($(this).text().trim() === '') {
+                                                $(this).append('⇆');
+                                            }
+                                        });
+
+
                                  var owl = $('.thunk-product-cat-slide');
                                  owl.owlCarousel({
                                   rtl:mshp_rtl,

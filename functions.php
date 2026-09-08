@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'm_shop_setup' ) ) :
-define( 'M_SHOP_THEME_VERSION','1.3.6');
+define( 'M_SHOP_THEME_VERSION','1.3.7');
 define( 'M_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'M_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
@@ -145,7 +145,7 @@ define( 'M_SHOP_THEME_SETTINGS', 'm-shop-settings' );
 		   ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'm-shop' ),
-                 'img' => 'icon-128x128.png',
+                 'img' => 'icon-128x128.gif',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
             ),
             'th-variation-swatches' => array(
