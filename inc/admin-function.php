@@ -31,7 +31,7 @@ if (!function_exists('m_shop_get_image_alt_text')) {
 			return $alt_text ? $alt_text : 'No ALT text found';
 		}
 		
-		return 'Image not found';
+		return '';
 	}
 	}
 /*********************/

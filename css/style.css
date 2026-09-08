@@ -6310,7 +6310,8 @@ margin-bottom:0.5rem;
    font-size: 0.9rem;
 }
 
-.thunk-single-product-slide .product-summary a.compare.button {
+.thunk-single-product-slide .product-summary a.compare.button,
+.thunk-single-product-slide .thunk-wishlist-inner {
     border: 1px solid;
     border-radius: 0;
     color: #9c9c9c;
@@ -6324,6 +6325,12 @@ margin-bottom:0.5rem;
     margin-left: 0.5rem;
     font-weight: normal;
     min-width: auto;
+}
+.thunk-single-product-slide .thw-add-to-wishlist-button-wrap{
+  height: 100%;
+}
+.thunk-single-product-slide .thw-add-to-wishlist-button{
+  color: #9c9c9c;
 }
 
 .thunk-single-product-slide .product-summary a.compare.button:before {
@@ -6340,6 +6347,7 @@ margin-bottom:0.5rem;
 
 .thunk-single-product-slide .single_add_to_cart_button.button.alt{
 line-height:2.2rem;
+margin-right: 0;
 }
 .thunk-single-product-slide .owl-nav button.owl-prev {
     left: 2.5rem;
@@ -6948,6 +6956,8 @@ z-index:0;
 .thunk-single-product-slide .thunk-wishlist,.thunk-single-product-slide .thunk-compare{
 display:inline-flex;
 margin-left:0.5rem;
+float: left;
+margin-left: 9px;
 }
 /*********************/
 /*Sidepan Button Css*/
@@ -7104,10 +7114,10 @@ a.dokan-btn-theme, .dokan-btn-theme{
 .thunk-single-product-slide-section .th-product-compare-btn-wrap{
   display: none;
 }
-.thunk-single-product-slide-section .th-product-compare-btn,
+/*.thunk-single-product-slide-section .th-product-compare-btn,
 .thunk-single-product-slide-section .thunk-compare{
   margin: 0!important;
-}
+}*/
 /* New Wishlist 2025  */
 .summary .yith-wcwl-add-to-wishlist-button,
 .summary .thw-add-to-wishlist-button{

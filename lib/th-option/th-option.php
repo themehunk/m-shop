@@ -6,7 +6,7 @@ add_action( 'admin_enqueue_scripts', array($this,'admin_scripts'));
 add_action('admin_menu', array($this,'menu_tab'));
 
     // AJAX.
-    add_action( 'wp_ajax_th_activeplugin',array($this,'th_activeplugin') );
+    add_action( 'wp_ajax_th_activeplugin',array($this,'th_activeplugin_call') );
     add_action( 'wp_ajax_default_home',array($this, 'default_home') );
 }
 function menu_tab() {
@@ -116,7 +116,7 @@ function _check_homepage_setup(){
           * Active plugin
           * Setup Homepage
           */
-        public function th_activeplugin(){
+        public function th_activeplugin_call(){
       if ( ! current_user_can( 'install_plugins' ) || ! isset( $_POST['init'] ) || ! $_POST['init'] ) {
         wp_send_json_error(
           array(
